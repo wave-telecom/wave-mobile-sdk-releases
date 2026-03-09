@@ -25,6 +25,9 @@ dependencyResolutionManagement {
             }
         }
         mavenCentral()
+        maven {
+            url = uri("https://wave-telecom.github.io/wave-mobile-sdk-releases")
+        }
     }
 }
 
