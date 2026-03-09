@@ -7,7 +7,7 @@ La navegación es controlada por la aplicación host a partir de callbacks de la
 El host recibe navegación mediante `SDKEvent.Callback`.
 
 ```kotlin
-if (event is SDKEvent.Callback && event.type == "RENDER_BLOCK_NAVIGATE") {
+if (event is SDKEvent.Callback && event.type.equals("RENDER_BLOCK_NAVIGATE", ignoreCase = true)) {
     // Resolver la acción desde event.payload
 }
 ```
@@ -29,6 +29,12 @@ Campos mínimos a considerar:
 - `payload.type`: `navigation`, `back`, `close`, `external`.
 - destino interno: `nextComponentId` (también pueden llegar `targetComponentId` o `destinationComponentId`).
 - destino externo: `url` (también puede llegar `externalUrl`).
+
+Notas de robustez del host:
+
+- Normaliza `event.type` (por ejemplo, `lowercase()`) antes de comparar.
+- Evita hacer `push` si el `nextComponentId` es igual al `componentId` actual.
+- Si `payload.type` no está disponible para back/close, usa fallback por `event.type`.
 
 ## Patrón recomendado
 

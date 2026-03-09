@@ -49,9 +49,11 @@ Para navegación, el formato observado es:
 Reglas mínimas para parsear callbacks:
 
 - Para navegación, parsea primero el objeto interno `payload`.
+- Normaliza `event.type` (por ejemplo, `lowercase()`) antes de evaluar reglas.
 - Usa `payload.type` para decidir acción del host.
 - Para navegación interna, lee `nextComponentId` (fallback: `targetComponentId`, `destinationComponentId`).
 - Para navegación externa, lee `url` (fallback: `externalUrl`).
+- Si `payload.type` no está disponible para back/close, usa fallback por `event.type`.
 - Para `RENDER_BLOCK_ERROR`, lee `code` y `name` del payload interno.
 
 ## Manejo recomendado
@@ -93,3 +95,8 @@ Implementación canónica usada en el proyecto:
 - `RENDER_BLOCK_NAVIGATE`: resolver transición.
 - `RENDER_BLOCK_ERROR`: tratar error funcional del flujo (ejemplo observado: `ADAPTER_NOT_FOUND`).
 - `RENDER_BLOCK_CLICK`: ejecutar acción del host asociada al flujo.
+
+Nota operativa:
+
+- `RENDER_BLOCK_ERROR` (ejemplo observado: `ADAPTER_NOT_FOUND`) puede coexistir con eventos de navegación; no asumir por sí solo que la navegación del host falló.
+- Mantén logging de `SDKEvent.Callback.type` y `payload` durante integración para validar comportamiento real en runtime.
