@@ -26,6 +26,13 @@ if (sdkStarted) {
 }
 ```
 
+## Datos mínimos para reproducir el app actual
+
+- `flowId` de entrada: `subscription-management`.
+- Mantén un stack de `componentId` en el host.
+- Si el stack está vacío, renderiza por `flowId`.
+- Si el stack tiene elementos, renderiza por `componentId` del tope.
+
 ## Recomendaciones de host
 
 - Mantener la inicialización en un único punto por ciclo de vida de la app.

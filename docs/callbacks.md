@@ -30,6 +30,30 @@ sealed class SDKEvent {
 - `RENDER_BLOCK_ERROR`
 - `RENDER_BLOCK_CLICK`
 
+## Formato de payload observado
+
+`SDKEvent.Callback.payload` es un JSON serializado en `String`.
+
+Para navegación, el formato observado es:
+
+```json
+{
+  "type": "RENDER_BLOCK_NAVIGATE",
+  "payload": {
+    "type": "navigation",
+    "nextComponentId": "catalog-1"
+  }
+}
+```
+
+Reglas mínimas para parsear callbacks:
+
+- Para navegación, parsea primero el objeto interno `payload`.
+- Usa `payload.type` para decidir acción del host.
+- Para navegación interna, lee `nextComponentId` (fallback: `targetComponentId`, `destinationComponentId`).
+- Para navegación externa, lee `url` (fallback: `externalUrl`).
+- Para `RENDER_BLOCK_ERROR`, lee `code` y `name` del payload interno.
+
 ## Manejo recomendado
 
 ```kotlin
@@ -46,7 +70,12 @@ onEvent = { event ->
         is SDKEvent.Callback -> {
             when (event.type) {
                 "RENDER_BLOCK_NAVIGATE" -> handleNavigation(event.payload)
-                "RENDER_BLOCK_ERROR" -> handleBlockError(event.payload)
+                "RENDER_BLOCK_ERROR" -> {
+                    val callbackPayload = extractJsonObjectField(event.payload, "payload") ?: event.payload
+                    val code = extractJsonStringField(callbackPayload, "code")
+                    val name = extractJsonStringField(callbackPayload, "name")
+                    handleBlockError(code, name, event.payload)
+                }
                 "RENDER_BLOCK_CLICK" -> handleAction(event.payload)
             }
         }
@@ -54,23 +83,13 @@ onEvent = { event ->
 }
 ```
 
-## Helpers mínimos de payload
-
-```kotlin
-private fun extractNextComponentId(payload: String): String? {
-    val regex = Regex("\"nextComponentId\"\\s*:\\s*\"([^\"]+)\"")
-    return regex.find(payload)?.groupValues?.getOrNull(1)
-}
-
-private fun isBackAction(payload: String): Boolean {
-    return payload.contains("\"type\":\"back\"") || payload.contains("\"type\": \"back\"")
-}
-```
+Implementación canónica usada en el proyecto:
+[sampleApp App.kt](../sampleApp/composeApp/src/commonMain/kotlin/br/com/wave/sample/App.kt)
 
 ## Acción esperada del host
 
 - `ComponentLoaded`: confirmar estado de carga.
 - `Error`: mostrar fallback o reintento.
 - `RENDER_BLOCK_NAVIGATE`: resolver transición.
-- `RENDER_BLOCK_ERROR`: tratar error funcional del flujo.
+- `RENDER_BLOCK_ERROR`: tratar error funcional del flujo (ejemplo observado: `ADAPTER_NOT_FOUND`).
 - `RENDER_BLOCK_CLICK`: ejecutar acción del host asociada al flujo.
