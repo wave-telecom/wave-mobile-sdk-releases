@@ -1,9 +1,5 @@
 # Instalación
 
-## Distribución
-
-El SDK se distribuye a través de un repositorio Maven público en GitHub Pages, compatible con Android e iOS mediante Kotlin Multiplatform.
-
 ## Requisitos
 
 | Dependencia | Versión mínima |
@@ -14,9 +10,9 @@ El SDK se distribuye a través de un repositorio Maven público en GitHub Pages,
 | iOS | `16.0+` |
 | Gradle | `8.x` |
 
-## Agregar repositorio
+## Repositorio Maven
 
-En el archivo `settings.gradle.kts` del proyecto:
+En `settings.gradle.kts`:
 
 ```kotlin
 dependencyResolutionManagement {
@@ -30,11 +26,9 @@ dependencyResolutionManagement {
 }
 ```
 
-## Agregar dependencia
+## Dependencia
 
-Reemplaza `<version>` por la versión que deseas utilizar. La versión más reciente validada en esta guía es `0.5.3`.
-
-En el módulo compartido (`shared/build.gradle.kts`):
+En el módulo compartido:
 
 ```kotlin
 kotlin {
@@ -46,23 +40,18 @@ kotlin {
 }
 ```
 
-## Permiso de Internet — solo Android
+## AndroidManifest (Android)
 
-Agrega lo siguiente en el `AndroidManifest.xml` de tu app Android:
+Agrega permiso de red:
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
-Esto es necesario porque el SDK utiliza una `WebView` para renderizar los componentes Wave.
-
-En iOS no se requiere ninguna configuración equivalente en la integración validada.
-
-## Imports principales
+## Imports
 
 ```kotlin
 import br.com.wave.flow_wrapper_kmp.FlowWrapper
 import br.com.wave.flow_wrapper_kmp.RenderBlock
 import br.com.wave.flow_wrapper_kmp.SDKEvent
 ```
-

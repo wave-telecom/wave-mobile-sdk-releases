@@ -1,14 +1,11 @@
 # Callbacks
 
-El SDK expone un modelo de eventos unificado para ambas plataformas a través del callback `onEvent` en `RenderBlock`.
+`RenderBlock` entrega eventos al host mediante `onEvent`.
 
-## Estructura del Event
-
-La API pública actual expone:
+## Modelo de eventos
 
 ```kotlin
 sealed class SDKEvent {
-
     data class Error(
         val componentId: String,
         val code: String,
@@ -27,103 +24,53 @@ sealed class SDKEvent {
 }
 ```
 
-## Eventos observados
-
-### ComponentLoaded
-
-Emitido cuando el componente fue cargado exitosamente.
-
-### Error
-
-Emitido por la SDK cuando ocurre un error asociado a un componente específico.
-
-### Callback
-
-Emitido por el bridge web/native para eventos funcionales del frontend.
-
-Tipos observados:
+## Tipos de callback observados
 
 - `RENDER_BLOCK_NAVIGATE`
 - `RENDER_BLOCK_ERROR`
 - `RENDER_BLOCK_CLICK`
 
-Para `RENDER_BLOCK_NAVIGATE`, el payload observado fue:
-
-```json
-{
-  "type": "RENDER_BLOCK_NAVIGATE",
-  "payload": {
-    "type": "navigation",
-    "nextComponentId": "catalog-1"
-  }
-}
-```
-
-Subtipos observados dentro de `payload.payload.type`:
-
-- `navigation`
-- `back`
-- `external`
-
-## Consumo de eventos
+## Manejo recomendado
 
 ```kotlin
-@Composable
-fun SubscriptionScreen() {
-    RenderBlock(
-        componentId = "subscription-detail-1",
-        onEvent = { event ->
-            when (event) {
-                is SDKEvent.ComponentLoaded -> {
-                    logger.info("Component loaded: ${event.componentId}")
-                }
+onEvent = { event ->
+    when (event) {
+        is SDKEvent.ComponentLoaded -> {
+            // bloque listo
+        }
 
-                is SDKEvent.Error -> {
-                    logger.error(
-                        "SDK Error [${event.componentId}]: ${event.message}"
-                    )
-                }
+        is SDKEvent.Error -> {
+            // error de bloque
+        }
 
-                is SDKEvent.Callback -> {
-                    logger.info(
-                        "SDK Callback [${event.type}]: ${event.payload}"
-                    )
-                }
+        is SDKEvent.Callback -> {
+            when (event.type) {
+                "RENDER_BLOCK_NAVIGATE" -> handleNavigation(event.payload)
+                "RENDER_BLOCK_ERROR" -> handleBlockError(event.payload)
+                "RENDER_BLOCK_CLICK" -> handleAction(event.payload)
             }
         }
-    )
-}
-```
-
-## Recomendación para navegación host-driven
-
-Para navegación, el host debe interpretar `SDKEvent.Callback`:
-
-```kotlin
-if (event is SDKEvent.Callback &&
-    event.type == "RENDER_BLOCK_NAVIGATE"
-) {
-    val nextComponentId = extractNextComponentId(event.payload)
-    if (nextComponentId != null) {
-        navController.navigate("canvas/$nextComponentId")
     }
 }
 ```
 
-## Manejo de errores y resiliencia
+## Helpers mínimos de payload
 
-Los errores se manejan de manera individual por componente, asegurando que fallas aisladas no afecten la experiencia general:
+```kotlin
+private fun extractNextComponentId(payload: String): String? {
+    val regex = Regex("\"nextComponentId\"\\s*:\\s*\"([^\"]+)\"")
+    return regex.find(payload)?.groupValues?.getOrNull(1)
+}
 
-- Falla de servicio: el bloque que falló puede ser reemplazado por un fallback definido por la plataforma
-- Cache del BFF: puede mantenerse la última respuesta exitosa para escenarios de reintento
-- Reintento: el usuario puede recargar el componente fallido sin afectar el resto de la pantalla
+private fun isBackAction(payload: String): Boolean {
+    return payload.contains("\"type\":\"back\"") || payload.contains("\"type\": \"back\"")
+}
+```
 
-## Nota de compatibilidad
+## Acción esperada del host
 
-Las referencias antiguas a:
-
-- `SDKEvent.Click`
-- `SDKEvent.Navigate`
-
-no corresponden al contrato público actual de la versión `0.5.3`.
-
+- `ComponentLoaded`: confirmar estado de carga.
+- `Error`: mostrar fallback o reintento.
+- `RENDER_BLOCK_NAVIGATE`: resolver transición.
+- `RENDER_BLOCK_ERROR`: tratar error funcional del flujo.
+- `RENDER_BLOCK_CLICK`: ejecutar acción del host asociada al flujo.

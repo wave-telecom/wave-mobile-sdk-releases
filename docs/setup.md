@@ -1,54 +1,33 @@
 # Setup
 
-El SDK expone un único método de inicialización en el módulo shared. Debe llamarse una sola vez, antes de cualquier uso del composable `RenderBlock`.
+Implementa el composable `RenderBlock` en la pantalla que defina tu host, preferentemente ocupando toda el área disponible.
 
-## Inicialización del SDK
+## Regla de orden
 
-```kotlin
-FlowWrapper.start(
-    apiKey = "YOUR_API_KEY",
-    msisdn = "+5511999999999",
-)
-```
-
-## Parámetros
-
-| Property | Type | Description |
-| --- | --- | --- |
-| `apiKey` | `String` | Authentication key provided by the Wave project administrator |
-| `msisdn` | `String` | User phone number in E.164 format |
-
-## Reglas de uso
-
-- La inicialización debe ocurrir antes del primer `RenderBlock`
-- Debe ejecutarse una sola vez por ciclo de vida del host
-- Si `RenderBlock` se usa sin inicialización previa, el SDK falla por configuración faltante
-
-## Ejemplo en Compose
+Inicializa la SDK primero y renderiza `RenderBlock` después.
 
 ```kotlin
+var sdkStarted by remember { mutableStateOf(false) }
+
 LaunchedEffect(Unit) {
     FlowWrapper.start(
         apiKey = "YOUR_API_KEY",
-        msisdn = "+5511999999999",
+        msisdn = "+5215512345678",
+    )
+    sdkStarted = true
+}
+
+if (sdkStarted) {
+    RenderBlock(
+        flowId = "YOUR_FLOW_ID",
+        modifier = Modifier.fillMaxSize(),
+        onEvent = { event -> /* host */ },
     )
 }
 ```
 
-## Seguridad
+## Recomendaciones de host
 
-El host es responsable de proteger la `API Key` y de no imprimir valores sensibles en logs de producción.
-
-## Nota sobre documentación previa
-
-En versiones antiguas de la documentación se mostraba:
-
-```kotlin
-RenderBlockSDK.start(
-    apiKey = "YOUR_API_KEY",
-    token = userToken,
-)
-```
-
-Ese contrato no corresponde a la API pública validada en `0.5.3`.
-
+- Mantener la inicialización en un único punto por ciclo de vida de la app.
+- Manejar transiciones y callbacks en el host.
+- Usar un contenedor full-screen para el bloque cuando el flujo sea pantalla principal.

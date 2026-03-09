@@ -1,58 +1,27 @@
 # Autenticación
 
-La Mobile SDK utiliza autenticación basada en `API Key` de la aplicación, proporcionada por la plataforma y asociada a la aplicación integradora.
+La inicialización requiere `apiKey` de la aplicación y `msisdn` del usuario.
 
-Esta clave identifica a la aplicación cliente y permite que el backend valide y autorice el consumo de los servicios de la SDK.
-
-## Cómo funciona
-
-La `API Key` se pasa en la inicialización del SDK junto con el número de teléfono del usuario (`MSISDN`).
-
-El entorno (`DEV` o `PRD`) se extrae automáticamente del payload del JWT de la `API Key`, por lo que no es necesario configurarlo de forma explícita.
-
-## Parámetros obligatorios
+## Parámetros
 
 | Campo | Descripción |
 | --- | --- |
-| `apiKey` | Llave de identificación de la aplicación. |
-| `msisdn` | Número de teléfono del usuario en formato E.164. Ejemplo: `+5511999999999` |
+| `apiKey` | Credencial de la aplicación. |
+| `msisdn` | Número en formato E.164. |
+
+## Inicialización
 
 ```kotlin
 FlowWrapper.start(
     apiKey = "YOUR_API_KEY",
-    msisdn = "+5511999999999",
+    msisdn = "+5215512345678",
 )
 ```
 
-## Responsabilidades de la aplicación
+Ejemplo usado en el proyecto: `msisdn = "+5511999999999"`.
 
-La aplicación móvil debe:
+## JWT de prueba (desarrollo)
 
-- Almacenar la `API Key` de forma segura
-- Evitar su exposición en logs
-- No compartir la clave públicamente
-- Utilizar ambientes separados (`dev`, `staging`, `prod`)
-
-## Seguridad
-
-La `API Key` representa la identidad de la aplicación, no del usuario.
-
-Por lo tanto:
-
-- No debe tratarse como token de sesión
-- No reemplaza la autenticación del usuario
-- Debe protegerse contra ingeniería inversa
-
-## Nota de compatibilidad
-
-La versión publicada `0.5.3` utiliza `apiKey + msisdn` como contrato de inicialización.
-
-No se encontró en la API pública actual un método equivalente a:
-
-```kotlin
-RenderBlockSDK.start(
-    apiKey = "YOUR_API_KEY",
-    token = userToken,
-)
+```text
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImR1MFVjYWxyZlNQckRCNU1qZ3VvMyJ9.eyJjbGllbnQiOiJ0ZWxjZWwtc3BlZWR5IiwiZW52aXJvbm1lbnQiOiJERVYiLCJpc3MiOiJodHRwczovL3dhdmUtdGVjaC1kZXYudXMuYXV0aDAuY29tLyIsInN1YiI6InJ0UFNJeTByOFlJT3hnYjJwakRWSzNZcFN3VmdQTGtRQGNsaWVudHMiLCJhdWQiOiJodHRwczovL2l6emktYWN0aXZhdGlvbi1kZXYtMGVkMi51Yy5yLmFwcHNwb3QuY29tLyIsImlhdCI6MTc3MjcxNzMxMCwiZXhwIjoxNzcyODAzNzEwLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJydFBTSXkwcjhZSU94Z2IycGpEVkszWXBTd1ZnUExrUSJ9.FRG72ttH0iPM0tXDx_G0nqjjwAXhKPXjmes20yVmfqP0pyhRkX5j_3hDcIUWZzV0sQ728voygxkTrN2evHh-FYfvrHIvkJ7W2QMBApogIwvjv6AeNLtuqK1NEEpi1vKlqAd6Er8Qn1cofOmlcWwL1qj71HBlmklPkwjNzL_oAWWDzOYYTwF5j4grgKHQKAGP5UjZvVPiCMkblkFjzp2FmFJUXIb_2I6BpRAbR166fner_C0tt_yqy0xRqYd8S6D4zqMHZ5qngyMNKl8VmXKo2O65dCDofxDYb2YqkUMwE_A88_Tlxhf-mBP3AJps305DseTj-L9N9c9M_WSQi_dY0g
 ```
-

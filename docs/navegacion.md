@@ -1,81 +1,52 @@
 # Navegación
 
-La estrategia de navegación es híbrida: la lógica de transición de pantallas se delega a la aplicación host, mientras que el SDK solo gestiona la renderización del contract.
+La navegación es controlada por la aplicación host a partir de callbacks de la SDK.
 
-- Los componentes inline permanecen en la pantalla actual
-- Los componentes full-screen emiten un evento al host
-- El host redirige a una ruta genérica de canvas
-- El canvas instancia un nuevo `RenderBlock` con el `componentId` de destino
+## Evento de navegación
 
-El SDK nunca navega de forma autónoma. Toda la navegación se comunica mediante callbacks para que el host pueda gestionar el navigation stack.
-
-## Contrato público actual
-
-En la versión `0.5.3` la navegación no llega como `SDKEvent.Navigate`.
-
-Llega a través de:
+El host recibe navegación mediante `SDKEvent.Callback`.
 
 ```kotlin
-SDKEvent.Callback(
-    type = "...",
-    payload = "...",
-    origin = "...",
-)
+if (event is SDKEvent.Callback && event.type == "RENDER_BLOCK_NAVIGATE") {
+    // Resolver la acción desde event.payload
+}
 ```
 
-Para navegación interna, el evento observado en runtime fue:
+## Patrón recomendado
 
-```text
-type = RENDER_BLOCK_NAVIGATE
-payload = {"type":"RENDER_BLOCK_NAVIGATE","payload":{"type":"navigation","nextComponentId":"catalog-1"}}
-```
+1. Renderiza un `flowId` de entrada.
+2. Cuando llegue una navegación, empuja un destino en tu stack del host.
+3. Renderiza ese destino con `componentId`.
+4. Permite volver al estado anterior removiendo el tope del stack.
 
-## Android — Host con canvas genérico
+## Ejemplo base
 
 ```kotlin
-val canvasStack = remember { mutableStateListOf<String>() }
-val currentCanvas = canvasStack.lastOrNull()
+val stack = remember { mutableStateListOf<String>() }
+val currentComponentId = stack.lastOrNull()
 
-if (currentCanvas == null) {
+if (currentComponentId == null) {
     RenderBlock(
-        flowId = "subscription-management",
+        flowId = "YOUR_FLOW_ID",
         onEvent = { event ->
-            when (event) {
-                is SDKEvent.Callback -> {
-                    if (event.type == "RENDER_BLOCK_NAVIGATE") {
-                        val nextComponentId = extractNextComponentId(event.payload)
-                        if (nextComponentId != null) {
-                            canvasStack += nextComponentId
-                        }
-                    }
-                }
-                else -> Unit
+            if (event is SDKEvent.Callback && event.type == "RENDER_BLOCK_NAVIGATE") {
+                val nextComponentId = extractNextComponentId(event.payload) // helper del host
+                if (nextComponentId != null) stack += nextComponentId
             }
-        }
+        },
     )
 } else {
     RenderBlock(
-        componentId = currentCanvas,
+        componentId = currentComponentId,
+        onEvent = { event ->
+            if (event is SDKEvent.Callback && isBackAction(event.payload)) { // helper del host
+                stack.removeLastOrNull()
+            }
+        },
     )
 }
 ```
 
-## Back nativo
+## Nota de UX
 
-Cuando el host mantiene un canvas stack, el back nativo debe ser redirigido al stack del host:
-
-- si hay pantallas apiladas, remover la última y volver al bloque anterior
-- si no hay pantallas apiladas, mantener el comportamiento normal del sistema
-
-Comportamiento validado en Android:
-
-- home SDK -> callback de navegación -> canvas
-- back nativo en canvas -> vuelve a la home SDK
-- back nativo en home -> sale al launcher
-
-## iOS
-
-El mismo principio aplica en iOS: el host debe capturar el callback, hacer `push` de una pantalla canvas genérica y usar el stack nativo para volver cuando corresponda.
-
-La responsabilidad del stack sigue siendo del host, no del SDK.
-
+Integrar el back del host al stack de navegación mejora la continuidad del flujo en móvil.
