@@ -18,7 +18,7 @@ import br.com.wave.flow_wrapper_kmp.RenderBlock
 import br.com.wave.flow_wrapper_kmp.SDKEvent
 
 private const val SDK_TAG = "WaveSdkSample"
-private const val SAMPLE_API_KEY = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImR1MFVjYWxyZlNQckRCNU1qZ3VvMyJ9.eyJjbGllbnQiOiJ0ZWxjZWwtc3BlZWR5IiwiZW52aXJvbm1lbnQiOiJERVYiLCJpc3MiOiJodHRwczovL3dhdmUtdGVjaC1kZXYudXMuYXV0aDAuY29tLyIsInN1YiI6InJ0UFNJeTByOFlJT3hnYjJwakRWSzNZcFN3VmdQTGtRQGNsaWVudHMiLCJhdWQiOiJodHRwczovL2l6emktYWN0aXZhdGlvbi1kZXYtMGVkMi51Yy5yLmFwcHNwb3QuY29tLyIsImlhdCI6MTc3MjcxNzMxMCwiZXhwIjoxNzcyODAzNzEwLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJydFBTSXkwcjhZSU94Z2IycGpEVkszWXBTd1ZnUExrUSJ9.FRG72ttH0iPM0tXDx_G0nqjjwAXhKPXjmes20yVmfqP0pyhRkX5j_3hDcIUWZzV0sQ728voygxkTrN2evHh-FYfvrHIvkJ7W2QMBApogIwvjv6AeNLtuqK1NEEpi1vKlqAd6Er8Qn1cofOmlcWwL1qj71HBlmklPkwjNzL_oAWWDzOYYTwF5j4grgKHQKAGP5UjZvVPiCMkblkFjzp2FmFJUXIb_2I6BpRAbR166fner_C0tt_yqy0xRqYd8S6D4zqMHZ5qngyMNKl8VmXKo2O65dCDofxDYb2YqkUMwE_A88_Tlxhf-mBP3AJps305DseTj-L9N9c9M_WSQi_dY0g"
+private const val SAMPLE_API_KEY = "YOUR_API_KEY"
 private const val SAMPLE_MSISDN = "+5511999999999"
 private const val ENTRY_FLOW_ID = "subscription-management"
 
@@ -43,11 +43,6 @@ private fun WaveSdkSampleApp() {
     var startupError by remember { mutableStateOf<String?>(null) }
     val componentStack = remember { mutableStateListOf<String>() }
     val currentComponentId = componentStack.lastOrNull()
-
-    HostBackHandler(enabled = componentStack.isNotEmpty()) {
-        val popped = componentStack.removeLastOrNull()
-        logSdk(SDK_TAG, "Native back intercepted, popped component=$popped")
-    }
 
     LaunchedEffect(Unit) {
         runCatching {
