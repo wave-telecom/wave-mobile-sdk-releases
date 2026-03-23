@@ -1,0 +1,372 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "flow-wrapper-kmp",
+    "version": "0.5.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-metadata-0.5.4.jar",
+          "url": "flow-wrapper-kmp-0.5.4.jar",
+          "size": 11164,
+          "sha512": "51331227aed408b157c7fc6630cdfb69fb59915e3860a50e3a454ee3eee565c17e31fe4f47fb7bfefe827294ffcc75b77a268dd2f2bcad940572c213a64ff43d",
+          "sha256": "9b2b2391b20ab4f092aafdc91f7208bb8a91276d0b46b1c0965c6bb4d9b7b7fe",
+          "sha1": "15c8e4922ecf287baca0b25e6e022261b445e5c7",
+          "md5": "24d077712b1294c9e8b7c45707113df5"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-kotlin-0.5.4-sources.jar",
+          "url": "flow-wrapper-kmp-0.5.4-sources.jar",
+          "size": 11771,
+          "sha512": "dfbe7fbe68634b3b4c02901df64017307a900ac557daf3e98138bb9860136b5dd8b6fe621641b1a8284299ea9e9798d9baad3f4c5b17e7ac51812e900a2f3ac6",
+          "sha256": "fca9b382400efac9adefa4fd59320028889e6ee6aa9f313de18e73019e4ecf37",
+          "sha1": "ecaee8a1701e251ff7ca25c7923aa7d8aa6b9837",
+          "md5": "277d87199e8a24f984544d5a3a11f580"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.5.4/flow-wrapper-kmp-android-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.5.4/flow-wrapper-kmp-android-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.5.4/flow-wrapper-kmp-android-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.5.4/flow-wrapper-kmp-iosarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.5.4/flow-wrapper-kmp-iosarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.5.4/flow-wrapper-kmp-iosarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.5.4/flow-wrapper-kmp-iosarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.5.4/flow-wrapper-kmp-iossimulatorarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.5.4/flow-wrapper-kmp-iossimulatorarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.5.4/flow-wrapper-kmp-iossimulatorarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.5.4/flow-wrapper-kmp-iossimulatorarm64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.5.4/flow-wrapper-kmp-iosx64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.5.4/flow-wrapper-kmp-iosx64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.5.4/flow-wrapper-kmp-iosx64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.5.4"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.5.4/flow-wrapper-kmp-iosx64-0.5.4.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.5.4"
+      }
+    }
+  ]
+}
