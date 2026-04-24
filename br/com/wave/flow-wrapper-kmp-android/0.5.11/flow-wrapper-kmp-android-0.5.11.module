@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../flow-wrapper-kmp/0.5.11/flow-wrapper-kmp-0.5.11.module",
+    "group": "br.com.wave",
+    "module": "flow-wrapper-kmp",
+    "version": "0.5.11",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp.aar",
+          "url": "flow-wrapper-kmp-android-0.5.11.aar",
+          "size": 81405,
+          "sha512": "b2a3b95f54c55dc82e84f2bc321e62fc51015d3b72a6ae0f5d33c49b1d267caabf6174f2099ca0d5ea8725c5bcdeaec1ccbe95393d381d6d98241606a6de3f18",
+          "sha256": "157b3fecb7bea49352911b29c3422c618b6cb3f486e27b25eb9d09f33a00cc7e",
+          "sha1": "22df84d749ec6e9a285b20d8c6e0f0f91d4b127b",
+          "md5": "a451d53fa7720e0aa94a6fa3cde8fa85"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp.aar",
+          "url": "flow-wrapper-kmp-android-0.5.11.aar",
+          "size": 81405,
+          "sha512": "b2a3b95f54c55dc82e84f2bc321e62fc51015d3b72a6ae0f5d33c49b1d267caabf6174f2099ca0d5ea8725c5bcdeaec1ccbe95393d381d6d98241606a6de3f18",
+          "sha256": "157b3fecb7bea49352911b29c3422c618b6cb3f486e27b25eb9d09f33a00cc7e",
+          "sha1": "22df84d749ec6e9a285b20d8c6e0f0f91d4b127b",
+          "md5": "a451d53fa7720e0aa94a6fa3cde8fa85"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-android-0.5.11-sources.jar",
+          "url": "flow-wrapper-kmp-android-0.5.11-sources.jar",
+          "size": 16440,
+          "sha512": "4318d5d49d31da788513e2ce617c648139640017437c68616dfb79b5027a60f6828c11a9c5b113100e850014dbf9f08f19c36d2a6ac095376c4e336e9b1f8660",
+          "sha256": "8a17189510771de2f96335da9cd71666beefbc093d7e44beb10563d0d4abe75e",
+          "sha1": "add8fd0a54cddc8d9c5085bcd0d8587c4158894f",
+          "md5": "d375d757ac514193442b6459fd876b10"
+        }
+      ]
+    }
+  ]
+}
