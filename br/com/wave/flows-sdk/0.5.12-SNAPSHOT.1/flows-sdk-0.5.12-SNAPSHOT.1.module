@@ -1,0 +1,421 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "flows-sdk",
+    "version": "0.5.12-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.12-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.12-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "requires": "0.5.12-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk-metadata-0.5.12-SNAPSHOT.1.jar",
+          "url": "flows-sdk-0.5.12-SNAPSHOT.1.jar",
+          "size": 10124,
+          "sha512": "5302834b4e6e91e9b8d005b1d84a43993e4121fb1a780806467872f8d040957ecdfbcbfa7b1a5062fcf7fb8dc8041dec34c327e4dabb1ccfb20d0299fdac8cac",
+          "sha256": "1fde86ee997071ea3a3e437ff7c53ab289df68878c946ce76c0445a3cb00029d",
+          "sha1": "bc880e226c9f1036e21d25e207abc472d2e37b86",
+          "md5": "3a74ebde3b716bed8670119ae889eb5c"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "flows-sdk-kotlin-0.5.12-SNAPSHOT.1-sources.jar",
+          "url": "flows-sdk-0.5.12-SNAPSHOT.1-sources.jar",
+          "size": 12689,
+          "sha512": "c36746f1075327ab924aea40889b3b9179bc6224ae6fe6ad939f8e63ec56c45cb27a63c9053576886e937be675c37756935b28e264e87f6c54058103d5717741",
+          "sha256": "d9eda282b392a9ea105130a8a32c823885b2a550b0da6c7c89c00f89d85cab23",
+          "sha1": "4d38e1d6eaa4e354bcd8753b8ff09f4a595bfb7e",
+          "md5": "db6558228b35499abdc1f675c34c500b"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-android/0.5.12-SNAPSHOT.1/flows-sdk-android-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-android",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-android/0.5.12-SNAPSHOT.1/flows-sdk-android-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-android",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-android/0.5.12-SNAPSHOT.1/flows-sdk-android-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-android",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.5.12-SNAPSHOT.1/flows-sdk-iosarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.5.12-SNAPSHOT.1/flows-sdk-iosarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.5.12-SNAPSHOT.1/flows-sdk-iosarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.5.12-SNAPSHOT.1/flows-sdk-iosarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.5.12-SNAPSHOT.1/flows-sdk-iossimulatorarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.5.12-SNAPSHOT.1/flows-sdk-iossimulatorarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.5.12-SNAPSHOT.1/flows-sdk-iossimulatorarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.5.12-SNAPSHOT.1/flows-sdk-iossimulatorarm64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.5.12-SNAPSHOT.1/flows-sdk-iosx64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.5.12-SNAPSHOT.1/flows-sdk-iosx64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.5.12-SNAPSHOT.1/flows-sdk-iosx64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.5.12-SNAPSHOT.1/flows-sdk-iosx64-0.5.12-SNAPSHOT.1.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.5.12-SNAPSHOT.1"
+      }
+    }
+  ]
+}
