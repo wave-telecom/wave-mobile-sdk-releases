@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.5.12/runtime-0.5.12.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.5.12",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.12.jar",
+          "url": "runtime-jvm-0.5.12.jar",
+          "size": 769012,
+          "sha512": "38ebdfb0a73c952cbd88c1cd8a0bd1ada1f314a5d3f6c2a48bc91300dba6feb70d5b9da2b7a7cd190cc54ad397475bc301c59d16db693981a319fba48169fe62",
+          "sha256": "27c2bb743bd3bb669fa3930ef443206a7f79b628e9d2db35b626ab5bcd23b7c3",
+          "sha1": "d660dc7fdcd65e91b9c3224df86b5c994a66bdc0",
+          "md5": "6f9c84f8b811b651cd42d838e863a42a"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.12"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.12.jar",
+          "url": "runtime-jvm-0.5.12.jar",
+          "size": 769012,
+          "sha512": "38ebdfb0a73c952cbd88c1cd8a0bd1ada1f314a5d3f6c2a48bc91300dba6feb70d5b9da2b7a7cd190cc54ad397475bc301c59d16db693981a319fba48169fe62",
+          "sha256": "27c2bb743bd3bb669fa3930ef443206a7f79b628e9d2db35b626ab5bcd23b7c3",
+          "sha1": "d660dc7fdcd65e91b9c3224df86b5c994a66bdc0",
+          "md5": "6f9c84f8b811b651cd42d838e863a42a"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.12-sources.jar",
+          "url": "runtime-jvm-0.5.12-sources.jar",
+          "size": 43264,
+          "sha512": "e764ef0bf83baaea462db930a5865366edec8df97e4736aadccc311a926012bdca6538b4064e24a12053a05dd991a6c24c86444fc00b94deb0f5de4d264d03c8",
+          "sha256": "4bdf14bc4dc3a71e8aa40f09582aa8b9e61ce4f080b6b0dead365e39f7a53a81",
+          "sha1": "c52c2e646f8bb4004b37178e2835aa5e57af5d2f",
+          "md5": "85dbb0e2072446ea42ec91cdfed40382"
+        }
+      ]
+    }
+  ]
+}
