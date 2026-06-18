@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../composeblocks/0.5.15-SNAPSHOT/composeblocks-0.5.15-SNAPSHOT.module",
+    "group": "br.com.wave",
+    "module": "composeblocks",
+    "version": "0.5.15-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-jvm-0.5.15-SNAPSHOT.jar",
+          "url": "composeblocks-jvm-0.5.15-SNAPSHOT.jar",
+          "size": 295470,
+          "sha512": "fb0a65bd37a50f114906836bff8461dc7c55bbd58456f9fc33b101b070cea2368dcce32899d85cb5d4edfc2658d9cdf3a5686c80d16f4e3d69504da6bf4a433f",
+          "sha256": "957b7809c4d54502ae5ecfed3c73ac5fccaf3a2e9564fdfbab3b7923337faeff",
+          "sha1": "113d370e3eb9c3e46cb7a7da8f37566a96504d03",
+          "md5": "cec05ab5959e5b819b76f02de850034e"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-jvm-0.5.15-SNAPSHOT.jar",
+          "url": "composeblocks-jvm-0.5.15-SNAPSHOT.jar",
+          "size": 295470,
+          "sha512": "fb0a65bd37a50f114906836bff8461dc7c55bbd58456f9fc33b101b070cea2368dcce32899d85cb5d4edfc2658d9cdf3a5686c80d16f4e3d69504da6bf4a433f",
+          "sha256": "957b7809c4d54502ae5ecfed3c73ac5fccaf3a2e9564fdfbab3b7923337faeff",
+          "sha1": "113d370e3eb9c3e46cb7a7da8f37566a96504d03",
+          "md5": "cec05ab5959e5b819b76f02de850034e"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "composeblocks-jvm-0.5.15-SNAPSHOT-sources.jar",
+          "url": "composeblocks-jvm-0.5.15-SNAPSHOT-sources.jar",
+          "size": 49753,
+          "sha512": "f1ca9dbe4aba1ce199469980de91d0aff310ac7bc2fd97d94f63963fc2024670238b09d6ff0c246e8deb9ff40079362229ebcce87baf7623cff9f1848eba1353",
+          "sha256": "606e92cc853eb5db91b72d692c4e97452a52a86e90266a537da512c327feba87",
+          "sha1": "b24766f213a6c6db982f52a4e5fbbd7c5f7a9c89",
+          "md5": "ba8582f31cd9206ddf3f9a338071c1a9"
+        }
+      ]
+    }
+  ]
+}

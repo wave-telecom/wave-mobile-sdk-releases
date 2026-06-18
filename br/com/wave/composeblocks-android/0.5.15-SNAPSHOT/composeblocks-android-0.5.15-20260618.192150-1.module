@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../composeblocks/0.5.15-SNAPSHOT/composeblocks-0.5.15-SNAPSHOT.module",
+    "group": "br.com.wave",
+    "module": "composeblocks",
+    "version": "0.5.15-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks.aar",
+          "url": "composeblocks-android-0.5.15-SNAPSHOT.aar",
+          "size": 168243,
+          "sha512": "f1d3f50517467e82aac58cf3726d07f66257ce66fa9f0b18f62ecb7aa849444e57fd1dba1a81b180190c478c1be97ab580db094cfac4a9bba9197ae90f9872f5",
+          "sha256": "49f1aea78d69ec1cca05d66f079ca37cf4a937b0262a09db1d4b7e918b635cc0",
+          "sha1": "100da7c64eabedda1791ac72fc234cc1e1f79a95",
+          "md5": "96474aa4a8d71f16f425f7b1d8e18f92"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks.aar",
+          "url": "composeblocks-android-0.5.15-SNAPSHOT.aar",
+          "size": 168243,
+          "sha512": "f1d3f50517467e82aac58cf3726d07f66257ce66fa9f0b18f62ecb7aa849444e57fd1dba1a81b180190c478c1be97ab580db094cfac4a9bba9197ae90f9872f5",
+          "sha256": "49f1aea78d69ec1cca05d66f079ca37cf4a937b0262a09db1d4b7e918b635cc0",
+          "sha1": "100da7c64eabedda1791ac72fc234cc1e1f79a95",
+          "md5": "96474aa4a8d71f16f425f7b1d8e18f92"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "composeblocks-android-0.5.15-SNAPSHOT-sources.jar",
+          "url": "composeblocks-android-0.5.15-SNAPSHOT-sources.jar",
+          "size": 49753,
+          "sha512": "f1ca9dbe4aba1ce199469980de91d0aff310ac7bc2fd97d94f63963fc2024670238b09d6ff0c246e8deb9ff40079362229ebcce87baf7623cff9f1848eba1353",
+          "sha256": "606e92cc853eb5db91b72d692c4e97452a52a86e90266a537da512c327feba87",
+          "sha1": "b24766f213a6c6db982f52a4e5fbbd7c5f7a9c89",
+          "md5": "ba8582f31cd9206ddf3f9a338071c1a9"
+        }
+      ]
+    }
+  ]
+}
