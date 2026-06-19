@@ -84,6 +84,7 @@ fun MyScreen() {
                 is SDKEvent.ComponentLoaded -> Unit
                 is SDKEvent.Error -> Unit
                 is SDKEvent.Callback -> Unit
+                is SDKEvent.ActionTracked -> Unit
             }
         },
     )
