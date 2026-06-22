@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/0.5.15-SNAPSHOT.2/core-0.5.15-SNAPSHOT.2.module",
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.5.15-SNAPSHOT.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-jvm-0.5.15-SNAPSHOT.2.jar",
+          "url": "core-jvm-0.5.15-SNAPSHOT.2.jar",
+          "size": 155586,
+          "sha512": "bdcf5df3d1780b47f1bd23973f4c7085fc35d9967a62581088c11c773d32a484ab41d6e013dfc6da549b113a7e91c5ab5cbf00f38fe9a0001c5e59f5949cea47",
+          "sha256": "dbdce322ff30838c61728dbcd6c717720249b0fe638d82c14ff4b3e4ca3e4f77",
+          "sha1": "027707a4cc09f615eb39e5a27e77cbc9a72defed",
+          "md5": "4470309cb7585c5fd4b347fc880cfb99"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-jvm-0.5.15-SNAPSHOT.2.jar",
+          "url": "core-jvm-0.5.15-SNAPSHOT.2.jar",
+          "size": 155586,
+          "sha512": "bdcf5df3d1780b47f1bd23973f4c7085fc35d9967a62581088c11c773d32a484ab41d6e013dfc6da549b113a7e91c5ab5cbf00f38fe9a0001c5e59f5949cea47",
+          "sha256": "dbdce322ff30838c61728dbcd6c717720249b0fe638d82c14ff4b3e4ca3e4f77",
+          "sha1": "027707a4cc09f615eb39e5a27e77cbc9a72defed",
+          "md5": "4470309cb7585c5fd4b347fc880cfb99"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "core-jvm-0.5.15-SNAPSHOT.2-sources.jar",
+          "url": "core-jvm-0.5.15-SNAPSHOT.2-sources.jar",
+          "size": 18169,
+          "sha512": "f8335fc9598e964a6ad61d5a562f5f49a9a4ce89ead746c9ec3d13d2b9567ee18775e22ce47a4fa2ddf0fc50f73e835f99560a109a7ead9f679fef87895ae5b4",
+          "sha256": "ef43d06e0850a567869b1f021d174c2f21b122579a07a1ca04445d4c2ba8a084",
+          "sha1": "a23c78c369e3ed09ffcec4b159e75b5b0b9d53a1",
+          "md5": "1781c02ee9f043240940dcaffbf6e679"
+        }
+      ]
+    }
+  ]
+}

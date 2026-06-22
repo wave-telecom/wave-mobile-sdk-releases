@@ -1,0 +1,360 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.5.15-SNAPSHOT.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-metadata-0.5.15-SNAPSHOT.2.jar",
+          "url": "core-0.5.15-SNAPSHOT.2.jar",
+          "size": 23092,
+          "sha512": "ec552f5fffda6237dd76f35c945224e258c44bc850cd9db3b72d01582c7f31fd2e22caeda6551d60eabc7442c40f5f6cbe1516970e47d97f95c51da1ab5f7a63",
+          "sha256": "f5fd280e3bb2ef5aa188556cf1e661be876ab28a33f76987d823c30920555f0c",
+          "sha1": "68289ccb8b1c27de4c896e7b19f0f0429bcde0ca",
+          "md5": "2509722378d4d75fd7bed9d1b982e6a1"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "core-kotlin-0.5.15-SNAPSHOT.2-sources.jar",
+          "url": "core-0.5.15-SNAPSHOT.2-sources.jar",
+          "size": 18169,
+          "sha512": "f8335fc9598e964a6ad61d5a562f5f49a9a4ce89ead746c9ec3d13d2b9567ee18775e22ce47a4fa2ddf0fc50f73e835f99560a109a7ead9f679fef87895ae5b4",
+          "sha256": "ef43d06e0850a567869b1f021d174c2f21b122579a07a1ca04445d4c2ba8a084",
+          "sha1": "a23c78c369e3ed09ffcec4b159e75b5b0b9d53a1",
+          "md5": "1781c02ee9f043240940dcaffbf6e679"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-android/0.5.15-SNAPSHOT.2/core-android-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-android",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-android/0.5.15-SNAPSHOT.2/core-android-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-android",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-android/0.5.15-SNAPSHOT.2/core-android-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-android",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosarm64/0.5.15-SNAPSHOT.2/core-iosarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosarm64/0.5.15-SNAPSHOT.2/core-iosarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosarm64/0.5.15-SNAPSHOT.2/core-iosarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iossimulatorarm64/0.5.15-SNAPSHOT.2/core-iossimulatorarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iossimulatorarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iossimulatorarm64/0.5.15-SNAPSHOT.2/core-iossimulatorarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iossimulatorarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iossimulatorarm64/0.5.15-SNAPSHOT.2/core-iossimulatorarm64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iossimulatorarm64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosx64/0.5.15-SNAPSHOT.2/core-iosx64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosx64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosx64/0.5.15-SNAPSHOT.2/core-iosx64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosx64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosx64/0.5.15-SNAPSHOT.2/core-iosx64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-iosx64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-jvm/0.5.15-SNAPSHOT.2/core-jvm-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-jvm",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-jvm/0.5.15-SNAPSHOT.2/core-jvm-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-jvm",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-jvm/0.5.15-SNAPSHOT.2/core-jvm-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-jvm",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-linuxx64/0.5.15-SNAPSHOT.2/core-linuxx64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-linuxx64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-linuxx64/0.5.15-SNAPSHOT.2/core-linuxx64-0.5.15-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "core-linuxx64",
+        "version": "0.5.15-SNAPSHOT.2"
+      }
+    }
+  ]
+}
