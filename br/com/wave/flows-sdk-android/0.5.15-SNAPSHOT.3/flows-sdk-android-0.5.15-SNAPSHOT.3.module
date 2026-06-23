@@ -1,0 +1,207 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../flows-sdk/0.5.15-SNAPSHOT.3/flows-sdk-0.5.15-SNAPSHOT.3.module",
+    "group": "br.com.wave",
+    "module": "flows-sdk",
+    "version": "0.5.15-SNAPSHOT.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.15-SNAPSHOT.3.aar",
+          "size": 153789,
+          "sha512": "8a59ab2ad5eea760a39696b307c758b3f5cf766b13d17eb1ab303d30410cebac7cb93b0b38ed523197da0b101611d0cf6e4b940b1983b36fb107481c3630c90e",
+          "sha256": "12b72f647a4bba73d0c27bbd2723367e45388a95f47842c743336f5d5f3cf5cd",
+          "sha1": "eeced9b91c8db21a3654cda76ca9599180594f2c",
+          "md5": "bd7da6ee576bb993851280b68f9c211f"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT.3"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "requires": "0.5.15-SNAPSHOT.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.15-SNAPSHOT.3.aar",
+          "size": 153789,
+          "sha512": "8a59ab2ad5eea760a39696b307c758b3f5cf766b13d17eb1ab303d30410cebac7cb93b0b38ed523197da0b101611d0cf6e4b940b1983b36fb107481c3630c90e",
+          "sha256": "12b72f647a4bba73d0c27bbd2723367e45388a95f47842c743336f5d5f3cf5cd",
+          "sha1": "eeced9b91c8db21a3654cda76ca9599180594f2c",
+          "md5": "bd7da6ee576bb993851280b68f9c211f"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "flows-sdk-android-0.5.15-SNAPSHOT.3-sources.jar",
+          "url": "flows-sdk-android-0.5.15-SNAPSHOT.3-sources.jar",
+          "size": 23220,
+          "sha512": "bfbc8c961ae219a86a4f36a6deaf5e907e612b1db28e591c06f2d65ec2a5caea38f3d2511e23e622b733665e8889fc5f50e96208d3e0bf0de05d5f30ec41085f",
+          "sha256": "6bc7fa362e162c4ce7e477023870d3bcccd2252349be2df3b828bdf55d7295d9",
+          "sha1": "3f0436cbf8d8c2bb49677113e081e132a3086098",
+          "md5": "338932d38103641bfd2af84d9477d9fa"
+        }
+      ]
+    }
+  ]
+}
