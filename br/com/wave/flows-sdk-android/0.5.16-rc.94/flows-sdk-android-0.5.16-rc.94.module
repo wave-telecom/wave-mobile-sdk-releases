@@ -1,0 +1,207 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../flows-sdk/0.5.16-rc.94/flows-sdk-0.5.16-rc.94.module",
+    "group": "br.com.wave",
+    "module": "flows-sdk",
+    "version": "0.5.16-rc.94",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.16-rc.94"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.16-rc.94.aar",
+          "size": 161246,
+          "sha512": "e4c9212762c099caf2bbb1a438963f2f37a81a788bd542442bbbefb4476347ba5a1b9428689a7189057d0e32b5e038a2c68c4633e7228998e4932181db58b917",
+          "sha256": "8ca1b77ef539250b8fabe15a46c4ff147f5b7470d1904c38039c40eecf95f824",
+          "sha1": "d55b0a407e23ec49aa2f1c61b660b2d0eb52c754",
+          "md5": "c9c72e6906eb6b46806dfeaee0a408e1"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.16-rc.94"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.16-rc.94"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "requires": "0.5.16-rc.94"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.16-rc.94.aar",
+          "size": 161246,
+          "sha512": "e4c9212762c099caf2bbb1a438963f2f37a81a788bd542442bbbefb4476347ba5a1b9428689a7189057d0e32b5e038a2c68c4633e7228998e4932181db58b917",
+          "sha256": "8ca1b77ef539250b8fabe15a46c4ff147f5b7470d1904c38039c40eecf95f824",
+          "sha1": "d55b0a407e23ec49aa2f1c61b660b2d0eb52c754",
+          "md5": "c9c72e6906eb6b46806dfeaee0a408e1"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "flows-sdk-android-0.5.16-rc.94-sources.jar",
+          "url": "flows-sdk-android-0.5.16-rc.94-sources.jar",
+          "size": 24415,
+          "sha512": "ed45c413ab6a8657f353e590dca6d5ebd5aa972d887aab4d3b964f6b8fa8c1a1e23fc93306cbae55ea20939c0b1d2fb9c2cea2a4e7742111e8f76a74a96d5fb9",
+          "sha256": "e68a71e3570b5b439546ad3af84f2df74f9a01b35df73063df9a11b7ac3d9b2e",
+          "sha1": "8daa083926b9e1538a3103056d4af359b3cf5eda",
+          "md5": "2fdaa5e37ccd039971fb6df552184a26"
+        }
+      ]
+    }
+  ]
+}
