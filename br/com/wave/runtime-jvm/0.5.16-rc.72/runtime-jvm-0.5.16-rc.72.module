@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.5.16-rc.72/runtime-0.5.16-rc.72.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.5.16-rc.72",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.16-rc.72.jar",
+          "url": "runtime-jvm-0.5.16-rc.72.jar",
+          "size": 818347,
+          "sha512": "f37edec2e255c282544bda14bc35528bd9362f49328daa667c0d9b8cc115f0f7990938d57b6715db662e0c45e5743d6fc4861d192d7981080f9582133c902b8a",
+          "sha256": "dec9374458256012e25d572de0887f6f9b02de19cdce1df2edbbc46569511082",
+          "sha1": "90fbbf7ededdc25e8bcea3cbbe3088581e2fd1df",
+          "md5": "0ad97d641505fed273208e1ba2195d31"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.16-rc.72"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.16-rc.72.jar",
+          "url": "runtime-jvm-0.5.16-rc.72.jar",
+          "size": 818347,
+          "sha512": "f37edec2e255c282544bda14bc35528bd9362f49328daa667c0d9b8cc115f0f7990938d57b6715db662e0c45e5743d6fc4861d192d7981080f9582133c902b8a",
+          "sha256": "dec9374458256012e25d572de0887f6f9b02de19cdce1df2edbbc46569511082",
+          "sha1": "90fbbf7ededdc25e8bcea3cbbe3088581e2fd1df",
+          "md5": "0ad97d641505fed273208e1ba2195d31"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.16-rc.72-sources.jar",
+          "url": "runtime-jvm-0.5.16-rc.72-sources.jar",
+          "size": 48102,
+          "sha512": "ba15122a3d207ace57848990e57ad5fddc0c57964b7c8c54d97c2658a7577d4dfcab2cf19880feb730d32354ef0e21c7e8be24f276769a75b305453899a9dd27",
+          "sha256": "cd1f397188d0c156d3670b986df130ec13d05b52e39f69b461826a35a5d4a57b",
+          "sha1": "33245ec820d1e30a2548cd7ea993cbe96a2124ab",
+          "md5": "0adc91ffd312945ab1c97b6a68348f5c"
+        }
+      ]
+    }
+  ]
+}

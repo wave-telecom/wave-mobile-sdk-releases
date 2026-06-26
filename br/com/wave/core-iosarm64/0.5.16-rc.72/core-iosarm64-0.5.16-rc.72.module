@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/0.5.16-rc.72/core-0.5.16-rc.72.module",
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.5.16-rc.72",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-iosArm64Main-0.5.16-rc.72.klib",
+          "url": "core-iosarm64-0.5.16-rc.72.klib",
+          "size": 124614,
+          "sha512": "f5f6ec610d4d63e58d0adfd0abf036bf4f17bf5400061b5592560c48d73c60cde676474937cbbd815a016bf0df4242c492ce1cd68f60142f42d27834231b2acb",
+          "sha256": "2fa44e7740c0dad620f55c7e986e11692df7e33d769191927893544bf2c2be0e",
+          "sha1": "0a899a5865b25d37ad43c5fe566ccc9e50183c91",
+          "md5": "8ebfc4f6fc61fa5f06250776218a0391"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-iosarm64-0.5.16-rc.72-sources.jar",
+          "url": "core-iosarm64-0.5.16-rc.72-sources.jar",
+          "size": 18863,
+          "sha512": "ded54edc3537f24fe476e51d9056dca914e79ce3b58b7743e6fdb11a49538bd4c1a388886b453d13bc2e50203511de7e4fdf1ccbbf274a58327ce9cfbde0576d",
+          "sha256": "10c5bdb54159f4b9ea2ec1dc4ebd0b04ebdfec005ffed134fa81331a1aece645",
+          "sha1": "f3239595bf931b02c4c326e40546fcc2079a98d6",
+          "md5": "578b41ad0729d7ed72ab49695b5805f0"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-iosarm64-0.5.16-rc.72-metadata.jar",
+          "url": "core-iosarm64-0.5.16-rc.72-metadata.jar",
+          "size": 261,
+          "sha512": "f45cc250cd6b897fb1cb7bc5208b8f318b5fe5e8e5f1187111d05a781e881360bed1ae2f9d60172abf9b091175587722648936e94fcfb254a84c4e4f6b4414e1",
+          "sha256": "b23e8ba38cdc118dca8120a0efd6407f46467fa5d0d74f913c311c159f2ce5ec",
+          "sha1": "e6f380b6826c77c3f5aec1bcfb4baa7b8c8cdee0",
+          "md5": "0ebfe8cbb93f9de3e0fe39bd4e8657bf"
+        }
+      ]
+    }
+  ]
+}
