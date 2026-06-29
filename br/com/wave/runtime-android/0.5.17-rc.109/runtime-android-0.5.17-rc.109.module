@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.5.17-rc.109/runtime-0.5.17-rc.109.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.5.17-rc.109",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.5.17-rc.109.aar",
+          "size": 705676,
+          "sha512": "234e4a5a4a60f4c14a03ab3d50ab55efa996379c3836e99bad853c89f3d9370a6622860d0a8c26ad0e3d9f0cb7f89aa514753161e2186472caf18514a0ceae48",
+          "sha256": "ef7cf9adc050924a0101a142b37ee8122691bae8002c11d97a05fed2bac4448e",
+          "sha1": "73ef5e591ea0de6f110bbbbe466e9fd2fa7611e2",
+          "md5": "79a3fc75ae110c1d2c2927d621a15c24"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.17-rc.109"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.5.17-rc.109.aar",
+          "size": 705676,
+          "sha512": "234e4a5a4a60f4c14a03ab3d50ab55efa996379c3836e99bad853c89f3d9370a6622860d0a8c26ad0e3d9f0cb7f89aa514753161e2186472caf18514a0ceae48",
+          "sha256": "ef7cf9adc050924a0101a142b37ee8122691bae8002c11d97a05fed2bac4448e",
+          "sha1": "73ef5e591ea0de6f110bbbbe466e9fd2fa7611e2",
+          "md5": "79a3fc75ae110c1d2c2927d621a15c24"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-android-0.5.17-rc.109-sources.jar",
+          "url": "runtime-android-0.5.17-rc.109-sources.jar",
+          "size": 50578,
+          "sha512": "852b627f30266d2fddc4e86423c6e23ebd6445226a6e893d0f1aa5f890a49bdfb0769908d74c3b6d8480eb7eb91fae2ee19b4410650e0cc65372726c221dec06",
+          "sha256": "c6aeb0c2fb00706e80b334f612355e64f87ad9e306792717f42843452dd6af7c",
+          "sha1": "acf67872eaf7c9ef17140efc1b6b0adac11e40d7",
+          "md5": "e19e5fedf0579a019520bcdd16ab627d"
+        }
+      ]
+    }
+  ]
+}
