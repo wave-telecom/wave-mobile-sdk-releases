@@ -1,0 +1,79 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/0.5.18-SNAPSHOT/core-0.5.18-SNAPSHOT.module",
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.5.18-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-linuxX64Main-0.5.18-SNAPSHOT.klib",
+          "url": "core-linuxx64-0.5.18-SNAPSHOT.klib",
+          "size": 127407,
+          "sha512": "b2161faa084424525938ce5a645cddfeb179103dc7afe67db1f3d17a0f56f7a1caea2a54fc6ddcf572b64c474df4147b923fc8cb33e914ec18e9089ef899e0da",
+          "sha256": "05963e385f368204331abc719093ed0c97a67c115fc6fb1a4a508ecdb63b1ede",
+          "sha1": "abd74c6e5c547b182eafaaf22449e8ca5292e802",
+          "md5": "1dab62321ca20cf795a5f6075202f70f"
+        }
+      ]
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "core-linuxx64-0.5.18-SNAPSHOT-sources.jar",
+          "url": "core-linuxx64-0.5.18-SNAPSHOT-sources.jar",
+          "size": 19168,
+          "sha512": "fd197d938de534a7e41f8395587df54772e10d2f8875d12969b2dd0d7425d4ed7377caf17a1fc04775d9de6b2c02837252e82757498d401437e0eba129c67251",
+          "sha256": "101df60d3d5497a6ca9b4c4aceb098b2c32c45306d0f3efd03838bd093c7c1fa",
+          "sha1": "d16fc10cfadec7e60926a0fba06accd218f78c66",
+          "md5": "d0fa1b1c212201641c53528a18d6d2ea"
+        }
+      ]
+    }
+  ]
+}
