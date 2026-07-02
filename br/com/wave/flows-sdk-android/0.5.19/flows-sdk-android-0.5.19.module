@@ -1,0 +1,228 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../flows-sdk/0.5.19/flows-sdk-0.5.19.module",
+    "group": "br.com.wave",
+    "module": "flows-sdk",
+    "version": "0.5.19",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.19"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.19.aar",
+          "size": 189745,
+          "sha512": "9fc34a7a611333783c85e8387e5e72ae6668f88cdd5f49592c239818d42584102354e5e6a64991d6914b8779afebffb26a087a1bac7e19a6c646f4cf011aebd2",
+          "sha256": "efa196c3aa8643382ed71ff7944a96794bfedb8d3d5598194758d66faf2eb3fd",
+          "sha1": "4befaf08a0fa1ed077e836b761055dbe86c384a0",
+          "md5": "70971015db65dfbbc15ccc1ba1b3f5df"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.19"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "dev.whyoleg.cryptography",
+          "module": "cryptography-provider-jdk",
+          "version": {
+            "requires": "0.6.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.19"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "requires": "0.5.19"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "dev.whyoleg.cryptography",
+          "module": "cryptography-core",
+          "version": {
+            "requires": "0.6.0"
+          }
+        },
+        {
+          "group": "dev.whyoleg.cryptography",
+          "module": "cryptography-provider-optimal",
+          "version": {
+            "requires": "0.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk.aar",
+          "url": "flows-sdk-android-0.5.19.aar",
+          "size": 189745,
+          "sha512": "9fc34a7a611333783c85e8387e5e72ae6668f88cdd5f49592c239818d42584102354e5e6a64991d6914b8779afebffb26a087a1bac7e19a6c646f4cf011aebd2",
+          "sha256": "efa196c3aa8643382ed71ff7944a96794bfedb8d3d5598194758d66faf2eb3fd",
+          "sha1": "4befaf08a0fa1ed077e836b761055dbe86c384a0",
+          "md5": "70971015db65dfbbc15ccc1ba1b3f5df"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "flows-sdk-android-0.5.19-sources.jar",
+          "url": "flows-sdk-android-0.5.19-sources.jar",
+          "size": 29069,
+          "sha512": "4caeeadecbd67e374405b09df923ac9056126761276a42e23a84421fa5e159332425e48ed129a42820d8a4a5b2aedae2cbde53fb5194cb530c1ef83d3bbe1c7f",
+          "sha256": "a8c0d12971147c8dcd1e7b4484240c8bc9b847b99ce7c786a080a6ba23c19cc9",
+          "sha1": "e46bbf82ce29ad3f8d82c7ee036d6b621c2076d2",
+          "md5": "0c3974d701f1e061190acfa487fc7f35"
+        }
+      ]
+    }
+  ]
+}
