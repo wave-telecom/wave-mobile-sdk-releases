@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.5.19-rc.123/runtime-0.5.19-rc.123.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.5.19-rc.123",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.19-rc.123.jar",
+          "url": "runtime-jvm-0.5.19-rc.123.jar",
+          "size": 856068,
+          "sha512": "a59ddc096a5847bdf8529e5b8fc714b9239320f111852610022305a22d86efa7ceae9f76d63fe4a7ba3c0c2e516d2f4667e5a269f9281b506478bcb43a41bd01",
+          "sha256": "e3f87f47e223e65a25959bbada5fb01d58f59c3153cf903d2e6c50db52841913",
+          "sha1": "bc8ef4101727642255164a58ed512444fb00674b",
+          "md5": "e71dc04b2bc173a3087159748d52ca4c"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.19-rc.123"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.19-rc.123.jar",
+          "url": "runtime-jvm-0.5.19-rc.123.jar",
+          "size": 856068,
+          "sha512": "a59ddc096a5847bdf8529e5b8fc714b9239320f111852610022305a22d86efa7ceae9f76d63fe4a7ba3c0c2e516d2f4667e5a269f9281b506478bcb43a41bd01",
+          "sha256": "e3f87f47e223e65a25959bbada5fb01d58f59c3153cf903d2e6c50db52841913",
+          "sha1": "bc8ef4101727642255164a58ed512444fb00674b",
+          "md5": "e71dc04b2bc173a3087159748d52ca4c"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-jvm-0.5.19-rc.123-sources.jar",
+          "url": "runtime-jvm-0.5.19-rc.123-sources.jar",
+          "size": 50503,
+          "sha512": "0a93637d0db71f7eb025604e7b0fe771c2af02757a167aef3ac76bd538f98b4631ae6de98e0d27f20f31fe843e9fa1b6c893bed0b9153da4215c0a73794ea187",
+          "sha256": "9440db6f59d12cd11b2673a94cf7fbb916e830a6b0392faec734ac8313e1632a",
+          "sha1": "df2e5845c735a7f440790d5c215a68fcb6a0ab4f",
+          "md5": "c04163ac74ddbfce6c845843cf114c71"
+        }
+      ]
+    }
+  ]
+}

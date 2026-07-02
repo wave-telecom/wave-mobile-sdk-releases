@@ -1,0 +1,422 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "composeblocks",
+    "version": "0.5.19-rc.123",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.5.19-rc.123"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.5.19-rc.123"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-metadata-0.5.19-rc.123.jar",
+          "url": "composeblocks-0.5.19-rc.123.jar",
+          "size": 28340,
+          "sha512": "d9e26685c1373b8092d3e8f0b8f33678d2ffaa9c8876b77e8522ad67342731ff8a993131f6817e7aa5649acb4f754c35617ea5a4e137e52accc954be17027e20",
+          "sha256": "eb831eeddfb834f38a08bfb7d69e79a5a83b31ccaa2c4b3059d9f00b1c4024b2",
+          "sha1": "8c307b6f171d63e9e3a8ac38f0ccd090d1824772",
+          "md5": "aa26a5d512adfcfc28f5e0c1821088f6"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "composeblocks-kotlin-0.5.19-rc.123-sources.jar",
+          "url": "composeblocks-0.5.19-rc.123-sources.jar",
+          "size": 62439,
+          "sha512": "d298077bddd9dd1a8a5e1872887446c920abb210d1dfdeed88e9d970fc0ffb1e3621620a71bec1c9125f09f9bda5cd9b2e16857511ee4a9746979231889089b3",
+          "sha256": "fc541b5ec39cc4f025d6450782fa4ce92a66871b0ea12e2143e7d3907c97f61a",
+          "sha1": "6bd12f366865d460c6c3a6906d1cf84d301959cf",
+          "md5": "50b8a091984e6b08e0ed8c5465ada2e2"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-android/0.5.19-rc.123/composeblocks-android-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-android",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-android/0.5.19-rc.123/composeblocks-android-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-android",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-android/0.5.19-rc.123/composeblocks-android-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-android",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosarm64/0.5.19-rc.123/composeblocks-iosarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosarm64/0.5.19-rc.123/composeblocks-iosarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosarm64/0.5.19-rc.123/composeblocks-iosarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosarm64/0.5.19-rc.123/composeblocks-iosarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iossimulatorarm64/0.5.19-rc.123/composeblocks-iossimulatorarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iossimulatorarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iossimulatorarm64/0.5.19-rc.123/composeblocks-iossimulatorarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iossimulatorarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iossimulatorarm64/0.5.19-rc.123/composeblocks-iossimulatorarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iossimulatorarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iossimulatorarm64/0.5.19-rc.123/composeblocks-iossimulatorarm64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iossimulatorarm64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosx64/0.5.19-rc.123/composeblocks-iosx64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosx64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosx64/0.5.19-rc.123/composeblocks-iosx64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosx64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosx64/0.5.19-rc.123/composeblocks-iosx64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosx64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../composeblocks-iosx64/0.5.19-rc.123/composeblocks-iosx64-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-iosx64",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-jvm/0.5.19-rc.123/composeblocks-jvm-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-jvm",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-jvm/0.5.19-rc.123/composeblocks-jvm-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-jvm",
+        "version": "0.5.19-rc.123"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../composeblocks-jvm/0.5.19-rc.123/composeblocks-jvm-0.5.19-rc.123.module",
+        "group": "br.com.wave",
+        "module": "composeblocks-jvm",
+        "version": "0.5.19-rc.123"
+      }
+    }
+  ]
+}
