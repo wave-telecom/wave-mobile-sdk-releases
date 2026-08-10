@@ -64,8 +64,11 @@ Initialize the SDK once (e.g. from `Application.onCreate()` on Android, or from 
 import br.com.wave.flow_wrapper_kmp.FlowWrapper
 
 FlowWrapper.start(
-    apiKey = "wave_live_<jwt>",
-    msisdn = "+5511999999999",
+    // Issued by your own backend. A JWT whose payload carries `base_url` (the BFF),
+    // `env` (DEV/PRD, for the WebView host) and `externalCode` (the subscriber
+    // identifier) — all three required.
+    // Required, and never persisted: the SDK holds it in memory for the process.
+    waveToken = "<wave token>",
 )
 ```
 
@@ -85,6 +88,7 @@ fun MyScreen() {
                 is SDKEvent.Error -> Unit
                 is SDKEvent.Callback -> Unit
                 is SDKEvent.ActionTracked -> Unit
+                SDKEvent.Unauthorized -> Unit
             }
         },
     )
