@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.6.0/runtime-0.6.0.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.6.0.aar",
+          "size": 706201,
+          "sha512": "a82b0e4b34da6053187c3e4e30f1bd21e44981fbf1e31902c51632cd73c07d7d49ca7acc0e6957784ceffde9ce70de080dfa90b9e5dbdd593d70ad9f8466055c",
+          "sha256": "e18d82d1ca7a375325e8d4b0dab1dc6d2c419abaca6264d18e526ca2bf456f0b",
+          "sha1": "1458b68e26321485a4d49bdaaf3ea5267636c3a4",
+          "md5": "7c14db22f0f5a0aab6e5ea3e4171bc72"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.6.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.6.0.aar",
+          "size": 706201,
+          "sha512": "a82b0e4b34da6053187c3e4e30f1bd21e44981fbf1e31902c51632cd73c07d7d49ca7acc0e6957784ceffde9ce70de080dfa90b9e5dbdd593d70ad9f8466055c",
+          "sha256": "e18d82d1ca7a375325e8d4b0dab1dc6d2c419abaca6264d18e526ca2bf456f0b",
+          "sha1": "1458b68e26321485a4d49bdaaf3ea5267636c3a4",
+          "md5": "7c14db22f0f5a0aab6e5ea3e4171bc72"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-android-0.6.0-sources.jar",
+          "url": "runtime-android-0.6.0-sources.jar",
+          "size": 50941,
+          "sha512": "9af12c2bd3ae3f7dc1c102bfe2977ca54a389e593628735af06ae81af4510de37c58918ce1190ecde385474e5f4b274ff247e35476c8a20d2d1771b840886648",
+          "sha256": "eb66eae6f7f207c4a849e092dbe50bf3ab69ad754a0fdbeb4513bd460bf08fe0",
+          "sha1": "a2b307af823f1f7935739bb35023b5ae45f9ae1a",
+          "md5": "74831f7ac2533956b2f0504e174f4595"
+        }
+      ]
+    }
+  ]
+}
