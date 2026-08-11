@@ -1,0 +1,165 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../webblocks/0.6.1-SNAPSHOT.1/webblocks-0.6.1-SNAPSHOT.1.module",
+    "group": "br.com.wave",
+    "module": "webblocks",
+    "version": "0.6.1-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks.aar",
+          "url": "webblocks-android-0.6.1-SNAPSHOT.1.aar",
+          "size": 62442,
+          "sha512": "998c2d0e944396931f6ce7fad91b556d3cc1875492557b08fdeb3ace8c2a9975175c8f8b671a7dfbf4be63a744e1391129b88e697422a2b6edf3c695b1a0df91",
+          "sha256": "8238ed052f43dfe2fbfbc4c0994275500bac8c4cc1b99bd33cc8a0a21d560f85",
+          "sha1": "7040efa0af758a3a95f261bea3a87c967afccd6f",
+          "md5": "c17e00e7fab36a6faeedc62abe3f6ec0"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks.aar",
+          "url": "webblocks-android-0.6.1-SNAPSHOT.1.aar",
+          "size": 62442,
+          "sha512": "998c2d0e944396931f6ce7fad91b556d3cc1875492557b08fdeb3ace8c2a9975175c8f8b671a7dfbf4be63a744e1391129b88e697422a2b6edf3c695b1a0df91",
+          "sha256": "8238ed052f43dfe2fbfbc4c0994275500bac8c4cc1b99bd33cc8a0a21d560f85",
+          "sha1": "7040efa0af758a3a95f261bea3a87c967afccd6f",
+          "md5": "c17e00e7fab36a6faeedc62abe3f6ec0"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "webblocks-android-0.6.1-SNAPSHOT.1-sources.jar",
+          "url": "webblocks-android-0.6.1-SNAPSHOT.1-sources.jar",
+          "size": 27909,
+          "sha512": "14af55b621bca2ac29baed12cd70a469eafd7289d2783a5f13ac739d855dc428766421ed7456f7d6055e8e965563d4f3904e3732728dd794ee9021be38bfa1dc",
+          "sha256": "9f83ea19e1adbc904f4676081ad812d4ee9df93484d343dc33364534ac0a6b3d",
+          "sha1": "34d141059dd338cf960a924c2a746a8390c3a3a8",
+          "md5": "a52702fd0c36acd4bba195545d27f33b"
+        }
+      ]
+    }
+  ]
+}

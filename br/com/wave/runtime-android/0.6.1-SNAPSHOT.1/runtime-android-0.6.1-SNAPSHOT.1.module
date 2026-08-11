@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.6.1-SNAPSHOT.1/runtime-0.6.1-SNAPSHOT.1.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.6.1-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.6.1-SNAPSHOT.1.aar",
+          "size": 720449,
+          "sha512": "0aa8d24982a400a4d0b83742bd2d24f31add1cf8f2f474df0b5c72220c30bbbd19a2454b0ce5e7f87ef90bdb0376c20823a39e89c2be9511a1e9d0a3f21591b5",
+          "sha256": "0516c155b1e51b3edc6aec9240d04abdba30324f4ce94be495478a6265aba628",
+          "sha1": "7d23cdb4550068918aee998d905b7f0f952ee685",
+          "md5": "dc6c278e5468743eb426b1b2e1c692cb"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.6.1-SNAPSHOT.1.aar",
+          "size": 720449,
+          "sha512": "0aa8d24982a400a4d0b83742bd2d24f31add1cf8f2f474df0b5c72220c30bbbd19a2454b0ce5e7f87ef90bdb0376c20823a39e89c2be9511a1e9d0a3f21591b5",
+          "sha256": "0516c155b1e51b3edc6aec9240d04abdba30324f4ce94be495478a6265aba628",
+          "sha1": "7d23cdb4550068918aee998d905b7f0f952ee685",
+          "md5": "dc6c278e5468743eb426b1b2e1c692cb"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-android-0.6.1-SNAPSHOT.1-sources.jar",
+          "url": "runtime-android-0.6.1-SNAPSHOT.1-sources.jar",
+          "size": 53781,
+          "sha512": "043544b6fd11c62eef4392e564b04a3e0c5a8b9506eba4b9f4446a22d5f8e7081b0ae3b2e6c220a77b6e42e56ca6047f84a06cde4464fc92b7b1343aa3bef339",
+          "sha256": "9921ff83dac4a1612170ab81f76f3418c070c25aeeef7e1438d8567ccab02259",
+          "sha1": "d0f44b4e7a114e155046cf377f80b9328a0c5309",
+          "md5": "55536a281a7a0a8da96a9de4355d23a6"
+        }
+      ]
+    }
+  ]
+}
