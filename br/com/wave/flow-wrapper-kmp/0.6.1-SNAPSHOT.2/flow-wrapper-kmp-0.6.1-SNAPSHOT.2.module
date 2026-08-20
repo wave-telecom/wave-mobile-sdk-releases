@@ -1,0 +1,393 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "flow-wrapper-kmp",
+    "version": "0.6.1-SNAPSHOT.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-metadata-0.6.1-SNAPSHOT.2.jar",
+          "url": "flow-wrapper-kmp-0.6.1-SNAPSHOT.2.jar",
+          "size": 32749,
+          "sha512": "f910a2e56e6ac74662a4ca7cc6a2a9fe3a3577778daac66269160bc51e0fe91a528df0f2c63cc7f373f9339a1f2f2aab4d0d79fc8ff1e6e1c3fad3ad8ae7b960",
+          "sha256": "38f070b7e2f355400d8eb7676a3eb31cb3410a5268f56a96e8fe66f73fd1642c",
+          "sha1": "8ccd65e1999ca600c0c283fd79ab09538e215d6d",
+          "md5": "9384b75d9717f06314fd4af6f0e3a86d"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-kotlin-0.6.1-SNAPSHOT.2-sources.jar",
+          "url": "flow-wrapper-kmp-0.6.1-SNAPSHOT.2-sources.jar",
+          "size": 57585,
+          "sha512": "f6178b2760c6ef8caa10f498d4a3b2fb8703b35c6fad39989e5a6e1089e8e061171e9219f1fac7560c70440d740acabc2c1ba12515d7b3d30417a04a913da6e6",
+          "sha256": "a590cee8c81e4b41950951c8997da11ba3cc35e21722f7f94c71f5a222c2e6cf",
+          "sha1": "d734df7bb930dc666121cfdf0f2b9b7dfe942907",
+          "md5": "ed46cc083d909c6359efc852982ea148"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-android-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-android-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-android-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iossimulatorarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iossimulatorarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iossimulatorarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iossimulatorarm64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosx64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosx64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosx64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.6.1-SNAPSHOT.2/flow-wrapper-kmp-iosx64-0.6.1-SNAPSHOT.2.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.6.1-SNAPSHOT.2"
+      }
+    }
+  ]
+}

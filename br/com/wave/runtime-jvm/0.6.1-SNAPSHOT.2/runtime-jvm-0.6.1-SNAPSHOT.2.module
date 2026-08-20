@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.6.1-SNAPSHOT.2/runtime-0.6.1-SNAPSHOT.2.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.6.1-SNAPSHOT.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.6.1-SNAPSHOT.2.jar",
+          "url": "runtime-jvm-0.6.1-SNAPSHOT.2.jar",
+          "size": 885809,
+          "sha512": "8f273957162aa18308336119084c2408eeb32bd804a8c94e06bb6968735a0d62c032d3c07d725a491b10cac8404ff9d19d78672c7b490ca1eb17e79a61c98336",
+          "sha256": "119829ed84bb2a1f90edcd5e2db99481669cddf655c34525bb52010da8e709f0",
+          "sha1": "0cb213d11423933aa4c46ca6be72597d3cb32bc9",
+          "md5": "ab5baad422f833c1c31c0e7fca3d8ebf"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.6.1-SNAPSHOT.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-jvm-0.6.1-SNAPSHOT.2.jar",
+          "url": "runtime-jvm-0.6.1-SNAPSHOT.2.jar",
+          "size": 885809,
+          "sha512": "8f273957162aa18308336119084c2408eeb32bd804a8c94e06bb6968735a0d62c032d3c07d725a491b10cac8404ff9d19d78672c7b490ca1eb17e79a61c98336",
+          "sha256": "119829ed84bb2a1f90edcd5e2db99481669cddf655c34525bb52010da8e709f0",
+          "sha1": "0cb213d11423933aa4c46ca6be72597d3cb32bc9",
+          "md5": "ab5baad422f833c1c31c0e7fca3d8ebf"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "runtime-jvm-0.6.1-SNAPSHOT.2-sources.jar",
+          "url": "runtime-jvm-0.6.1-SNAPSHOT.2-sources.jar",
+          "size": 56234,
+          "sha512": "b6d782789151a184bb1c7f5dcdfdb0d0c0326a6ed7ffdd2acf86bed1194cb17653058edc4fc26ecc279ffefb44290eef0876a3db139c4debbe682b2512512af5",
+          "sha256": "d9ab43da54229b11957fa3b49777f316c8522ca7e01ae92cfc629eb5ec54ed46",
+          "sha1": "ea0957abb23cbb6c791d18df812a630a711c55d8",
+          "md5": "667bec57beccf7898313ea33accba5be"
+        }
+      ]
+    }
+  ]
+}
