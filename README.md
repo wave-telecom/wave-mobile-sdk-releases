@@ -44,7 +44,7 @@ kotlin {
 
 > Replace `<version>` with the latest release available in this repository.
 >
-> The supporting modules (`flows-sdk`, `core`, `runtime`, `composeblocks`) are resolved transitively through Gradle module metadata — you do not need to declare them explicitly.
+> The supporting modules (`flows-sdk`, `core`, `runtime`, `composeblocks`, `webblocks`) are resolved transitively through Gradle module metadata — you do not need to declare them explicitly.
 
 ### 3. Android — Internet permission
 

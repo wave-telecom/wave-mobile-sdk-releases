@@ -1,0 +1,93 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/0.7.0-rc.186/core-0.7.0-rc.186.module",
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.7.0-rc.186",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-iosX64Main-0.7.0-rc.186.klib",
+          "url": "core-iosx64-0.7.0-rc.186.klib",
+          "size": 144141,
+          "sha512": "f02bcafd014aa80dae783f5f50b261d983063fd1c4be3823f0210622ee0acd97ceb5c1e39aa94e1fe400ed39b9469c5c910b262bf2058ac822a336e49aa7739b",
+          "sha256": "e1210b22cdbe0af29f38f556ae5178fe169f34385f1c1d82670b3ee35e2f1e20",
+          "sha1": "e1f19a324cbd69c4f0376b0fba133b16b7a383ab",
+          "md5": "f66261c4e75fd08786095c1f1aeeba01"
+        }
+      ]
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-iosx64-0.7.0-rc.186-metadata.jar",
+          "url": "core-iosx64-0.7.0-rc.186-metadata.jar",
+          "size": 261,
+          "sha512": "6758f17b180afc37fd6908a978d35b3ecd18767f9d2516284ece0e04cf5dd9a4cde9bc26fc14d338db3f953b7dbcce4ae97203850f6128a1584e981da4cd166d",
+          "sha256": "8a279214cfa150ac60e02d967813982faf834404daae4d918ba15c2ece8c61be",
+          "sha1": "045b22e88270650e4430f9adb97e288b714f9ac2",
+          "md5": "1e7c9d5c16217100c01ceff128fe0c13"
+        }
+      ]
+    }
+  ]
+}
