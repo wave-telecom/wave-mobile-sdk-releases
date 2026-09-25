@@ -1,0 +1,258 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../composeblocks/0.7.0.2/composeblocks-0.7.0.2.module",
+    "group": "br.com.wave",
+    "module": "composeblocks",
+    "version": "0.7.0.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-iosArm64Main-0.7.0.2.klib",
+          "url": "composeblocks-iosarm64-0.7.0.2.klib",
+          "size": 393353,
+          "sha512": "0094fa8f150d27bc2dc4a6448d1d2d2632ab64d577d25a7501aecaf434700fcd60f58202da9d1c6c4e329ac40f7f7db1aae3de53eeb310a8cbbcff7d82159ac2",
+          "sha256": "3aa4593c7260e546122daa210a0f5a10ff12d33750a70bd247efc39426ff5131",
+          "sha1": "bfceab9e65382fa542d925e427052bd6146274f1",
+          "md5": "044d4b1a5bfcb4ccf4e669b0b8522c2c"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-0.7.0.2.kotlin_resources.zip",
+          "url": "composeblocks-iosarm64-0.7.0.2-kotlin_resources.kotlin_resources.zip",
+          "size": 338,
+          "sha512": "3c5ff2d44d3774c3e5a68f222e64c1b7dd57cbb89fb9f40333beb2e2874f96886e4e46bce06427fcf3d0e4a9ff31f9b64a3d8b76ddba89b2007668bdca36f0cd",
+          "sha256": "79107e43afc55082ffa985f29e9f2408e1a023d9ce82c79935a07931e87842cf",
+          "sha1": "d54220ee4b45a777e2233c99f34ef1817943d320",
+          "md5": "318971337737a28d0ed097b88b632a62"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.7.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "composeblocks-iosarm64-0.7.0.2-metadata.jar",
+          "url": "composeblocks-iosarm64-0.7.0.2-metadata.jar",
+          "size": 261,
+          "sha512": "484627b0ed36e262c10e68928dc02385467cd87968bf9ae51903b9ad92c7a041416f26b14d939545004732c14a611defc13e2e6f02daac21d32a8ed444419f29",
+          "sha256": "648cf28f4ac7d4c5a892e542957213b98239c480fcfaeafdfd2073c9f31e2810",
+          "sha1": "6d1edf675bfefd23d8ee2c1b73a69c084a1f9eb7",
+          "md5": "af2377613372160ad1f22e813d7d810f"
+        }
+      ]
+    }
+  ]
+}
