@@ -1,0 +1,279 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../webblocks/0.7.2-SNAPSHOT.1/webblocks-0.7.2-SNAPSHOT.1.module",
+    "group": "br.com.wave",
+    "module": "webblocks",
+    "version": "0.7.2-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks-iosX64Main-0.7.2-SNAPSHOT.1.klib",
+          "url": "webblocks-iosx64-0.7.2-SNAPSHOT.1.klib",
+          "size": 73855,
+          "sha512": "541943f68be3ea8f88219b8c16dcd157bb12eb15f1eccaff3d9a9364761d4ad7ee03a7b51dce6943b460e19c341165047d374fea9e30c8c3c5aaacf00c35945b",
+          "sha256": "42e80baff977f9ceee22deb1da6731d920b6bc4fae2edae63c1ae269a0c8f166",
+          "sha1": "f62727c6ddee1ccd9d0a1081d9aa889e2959b416",
+          "md5": "747c1f8d738080d2331d1427948bb73d"
+        }
+      ]
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks-0.7.2-SNAPSHOT.1.kotlin_resources.zip",
+          "url": "webblocks-iosx64-0.7.2-SNAPSHOT.1-kotlin_resources.kotlin_resources.zip",
+          "size": 330,
+          "sha512": "0a9e30116936fde15284e8d015bf6b7fb536c056688507aee10abd35fc9a30defe35e7b92457a0d31aff406869c89ce197f92d61afb7b7e3027c6816d4e4ac92",
+          "sha256": "1c1e46bd992dddcec3e45f2b379724c77238e4f9d40d8b3967821ace37bd42ae",
+          "sha1": "57a601274f7a30cd8bd181a825bbcab9894b0fc7",
+          "md5": "cb5dc22db392f2ca27e60652e86a3640"
+        }
+      ]
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks-iosx64-0.7.2-SNAPSHOT.1-metadata.jar",
+          "url": "webblocks-iosx64-0.7.2-SNAPSHOT.1-metadata.jar",
+          "size": 2887,
+          "sha512": "35f90acd9182430cf1033e5feb9c01fa2f57c7dd6923f0d3e2d9efef74a012594f7994dc281f7df34618b0b56f7b51ff97d0e0759d9a23125a496d05d990b310",
+          "sha256": "14c60896ec9e566fae897c7bec8edb055671258b90d4744055b837abc6c124ec",
+          "sha1": "350a6a91d22c3eeb16fd609b76b8033eb7fc8730",
+          "md5": "3a65e0779a1b3537561172e15a50ac05"
+        }
+      ]
+    }
+  ]
+}

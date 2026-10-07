@@ -1,0 +1,321 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../flow-wrapper-kmp/0.7.2-SNAPSHOT.1/flow-wrapper-kmp-0.7.2-SNAPSHOT.1.module",
+    "group": "br.com.wave",
+    "module": "flow-wrapper-kmp",
+    "version": "0.7.2-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-iosArm64Main-0.7.2-SNAPSHOT.1.klib",
+          "url": "flow-wrapper-kmp-iosarm64-0.7.2-SNAPSHOT.1.klib",
+          "size": 302558,
+          "sha512": "e2948c8f04d32de904fdd0f4ebfe6e7e2ea7716dcc67be556dcaaa225f336cb14eba51136043c6b27d36663aa57174da0ea2fb2e99a58227c5a4271474aa53cd",
+          "sha256": "502a5a1555f569783f77aa3f52cb4062c056cdf179e71dbfb47c50188204a067",
+          "sha1": "d8ef72ce8c4d26bf64b663ce4bbe92d5d36b81ea",
+          "md5": "d6c50d7a0ae310b9fcb3d9f8526970dd"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-0.7.2-SNAPSHOT.1.kotlin_resources.zip",
+          "url": "flow-wrapper-kmp-iosarm64-0.7.2-SNAPSHOT.1-kotlin_resources.kotlin_resources.zip",
+          "size": 1193,
+          "sha512": "bf17102491289fa35695d94222d9ff5cb9e7779e8bb2e5df00e6c9e6c662c945581784661ff16033c1944388d14956fa8cce341a527e4392d8ff07952c663ffb",
+          "sha256": "7710f6ca3924e8701892a580227107a0ddf404326f5cb12a5488b6e67dc71df3",
+          "sha1": "8ee3890b5fbf998644e3ba716a53dec48cb3ba20",
+          "md5": "ba9f82ca794376bd3fa8e294e217c1ea"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "requires": "0.7.2-SNAPSHOT.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-iosarm64-0.7.2-SNAPSHOT.1-metadata.jar",
+          "url": "flow-wrapper-kmp-iosarm64-0.7.2-SNAPSHOT.1-metadata.jar",
+          "size": 4576,
+          "sha512": "42aaafdfee8149a385873b7b79bd97b3dbdd72ea12d1ba78286ac8c9f041d4f1815ff82da85eb5c0181fca445719e6d3649277fc7993b7f4784a262a17912111",
+          "sha256": "21727f21ac89bafa8eb86baa0dfd73c0dbcd2124f6a41f37d15af0abd5541d84",
+          "sha1": "f1542b62bda330d41bbebdf49e056acd1b732302",
+          "md5": "7b2dee5d9be06fa2d124d919a304ea97"
+        }
+      ]
+    }
+  ]
+}
