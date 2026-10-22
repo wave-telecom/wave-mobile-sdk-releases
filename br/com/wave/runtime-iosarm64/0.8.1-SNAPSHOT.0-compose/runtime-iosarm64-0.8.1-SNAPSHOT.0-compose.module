@@ -1,0 +1,163 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.8.1-SNAPSHOT.0-compose/runtime-0.8.1-SNAPSHOT.0-compose.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.8.1-SNAPSHOT.0-compose",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-iosArm64Main-0.8.1-SNAPSHOT.0-compose.klib",
+          "url": "runtime-iosarm64-0.8.1-SNAPSHOT.0-compose.klib",
+          "size": 886766,
+          "sha512": "c59f5d366117144c5d85f93b6da42f3eca60f950a605ee81ef0e4ce238e4547e991b5581cb2a141d8f644498d177f24a02f293eb05a114e0bf00adf52946dcd8",
+          "sha256": "1289f986780c8ddf8f6bcce8ec0b4cfc34478d9d1b0efba8dbec6460dea42643",
+          "sha1": "24cdb5d607190303b2f08d5aeac55952b3b13603",
+          "md5": "8fb1d967e0cfff1eb98285ebeb64a94e"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-iosarm64-0.8.1-SNAPSHOT.0-compose-metadata.jar",
+          "url": "runtime-iosarm64-0.8.1-SNAPSHOT.0-compose-metadata.jar",
+          "size": 2428,
+          "sha512": "9e680d8fe6326bdc3349f70d1fb811d5a5e4290ad2cb18f2a60aec90974487565ebfa74249d7f14feee26367e2d947b54cf8a262ebfcada4dfa0701f4b435f89",
+          "sha256": "29a85a510bb3cb017bc96a331a126b03808c67c660e1ac70c5d3ad43dd6768a6",
+          "sha1": "ebd78803f80a7969d05c240029b90ed9e4c5f1cc",
+          "md5": "36047a6f02429bfed656d81246fac183"
+        }
+      ]
+    }
+  ]
+}

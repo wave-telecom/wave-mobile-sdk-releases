@@ -1,0 +1,227 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "viewblocks",
+    "version": "0.8.1-SNAPSHOT.0-compose",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewblocks-0.8.1-SNAPSHOT.0-compose.aar",
+          "url": "viewblocks-0.8.1-SNAPSHOT.0-compose.aar",
+          "size": 109147,
+          "sha512": "69a01597ef42801b7e32bdf657ded9500f65c5f1ac48135abd9804cae7eaf5260b5e04f8c5e425f6cfc3709f48268dcc98bc9609b804dc03033817a6ad2fc5e1",
+          "sha256": "f8a22b6b3bcaca8491ba33002ca4ba994581847d8b8cdd8c0386b8a7f62fc07e",
+          "sha1": "3f4d10b3c7904a1d0d7b3cf890ff3bd45f307e8d",
+          "md5": "d278a436846dc46a7ee42af42babf2d8"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.1-SNAPSHOT.0-compose",
+            "requires": "0.8.1-SNAPSHOT.0-compose"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewblocks-0.8.1-SNAPSHOT.0-compose.aar",
+          "url": "viewblocks-0.8.1-SNAPSHOT.0-compose.aar",
+          "size": 109147,
+          "sha512": "69a01597ef42801b7e32bdf657ded9500f65c5f1ac48135abd9804cae7eaf5260b5e04f8c5e425f6cfc3709f48268dcc98bc9609b804dc03033817a6ad2fc5e1",
+          "sha256": "f8a22b6b3bcaca8491ba33002ca4ba994581847d8b8cdd8c0386b8a7f62fc07e",
+          "sha1": "3f4d10b3c7904a1d0d7b3cf890ff3bd45f307e8d",
+          "md5": "d278a436846dc46a7ee42af42babf2d8"
+        }
+      ]
+    }
+  ]
+}
