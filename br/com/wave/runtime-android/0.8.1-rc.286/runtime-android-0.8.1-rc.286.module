@@ -1,0 +1,221 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../runtime/0.8.1-rc.286/runtime-0.8.1-rc.286.module",
+    "group": "br.com.wave",
+    "module": "runtime",
+    "version": "0.8.1-rc.286",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.8.1-rc.286.aar",
+          "size": 694782,
+          "sha512": "dc095e9dd339bcd1508cf276d31226e6ece360af4612b946b410a5510f23cd50d0807024c95da417bcb29d99fd0e92bb91b20469144f64630b2e6662b7d8b5cc",
+          "sha256": "895bec3d4b677331d3b03c30862e97e4c911c8a2fa5f4e9f23c28dae6c7f24eb",
+          "sha1": "0a3c089f6f49e8d77e9a0c57677ed0874a574424",
+          "md5": "41bc7110b8e84a4e26483c4192a9667b"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.1-rc.286",
+            "requires": "0.8.1-rc.286"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime.aar",
+          "url": "runtime-android-0.8.1-rc.286.aar",
+          "size": 694782,
+          "sha512": "dc095e9dd339bcd1508cf276d31226e6ece360af4612b946b410a5510f23cd50d0807024c95da417bcb29d99fd0e92bb91b20469144f64630b2e6662b7d8b5cc",
+          "sha256": "895bec3d4b677331d3b03c30862e97e4c911c8a2fa5f4e9f23c28dae6c7f24eb",
+          "sha1": "0a3c089f6f49e8d77e9a0c57677ed0874a574424",
+          "md5": "41bc7110b8e84a4e26483c4192a9667b"
+        }
+      ]
+    }
+  ]
+}
