@@ -1,0 +1,149 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../monitoring/0.8.2-SNAPSHOT.1/monitoring-0.8.2-SNAPSHOT.1.module",
+    "group": "br.com.wave",
+    "module": "monitoring",
+    "version": "0.8.2-SNAPSHOT.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "monitoring-iosSimulatorArm64Main-0.8.2-SNAPSHOT.1.klib",
+          "url": "monitoring-iossimulatorarm64-0.8.2-SNAPSHOT.1.klib",
+          "size": 351662,
+          "sha512": "83a844657efde631a3c3e91d6c0c8648ea5a8f81c1ca16f0e9cca7c4cc05209baa3021157312d83deac6cfdcd0bf0df185bb41d6f54579d75031d67c8580f7c5",
+          "sha256": "39a31bfd5d494416197235f82c6646cb0f37aef954d1b5d914526f66317241d9",
+          "sha1": "9f0ac5374540619a3a1683b61c573fd991100ee6",
+          "md5": "8e2286ddf3be4145eaf355f865f72fd0"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "monitoring-iossimulatorarm64-0.8.2-SNAPSHOT.1-metadata.jar",
+          "url": "monitoring-iossimulatorarm64-0.8.2-SNAPSHOT.1-metadata.jar",
+          "size": 9344,
+          "sha512": "c37ddbcde30d9b2fee0d8f20787e9c2b6c073f352fff132cc16d27a0c16dc87c0ae3c5e614c1224123bafea9e5ae0cdea03bf04043d18721ece2cd3ac185457c",
+          "sha256": "2c7fa81853d7e710f5fd574e039ca15bc1de7d97cae2efc7abf08a1a971df21e",
+          "sha1": "f3565ef3fc933ede3aad5412dca439785f03e7cc",
+          "md5": "ac81ae4642724fd969ddbc75fa074209"
+        }
+      ]
+    }
+  ]
+}
