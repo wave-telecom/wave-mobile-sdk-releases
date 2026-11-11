@@ -1,0 +1,230 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.8.2-SNAPSHOT.0-compose-locked",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-metadata-0.8.2-SNAPSHOT.0-compose-locked.jar",
+          "url": "core-0.8.2-SNAPSHOT.0-compose-locked.jar",
+          "size": 42299,
+          "sha512": "699f5302008fd4b6293caed81a06ded15d219e1d3a1929eb6c023707695a015540f9053ebcb182d1274d3af0e28cf92f9836204f77db93c3643b4fadabfb0e24",
+          "sha256": "6e998c3db42b76b2cbe29cf3fd1c1d7b4a8ee9ea1e3239ca82432426ff9d91a0",
+          "sha1": "8af176962de8a38e5c05eae1fdcef3f47dfc0b26",
+          "md5": "b524cc2f0db32e52f13317deae6b9757"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-android/0.8.2-SNAPSHOT.0-compose-locked/core-android-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-android",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-android/0.8.2-SNAPSHOT.0-compose-locked/core-android-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-android",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosarm64/0.8.2-SNAPSHOT.0-compose-locked/core-iosarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iosarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosarm64/0.8.2-SNAPSHOT.0-compose-locked/core-iosarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iosarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iossimulatorarm64/0.8.2-SNAPSHOT.0-compose-locked/core-iossimulatorarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iossimulatorarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iossimulatorarm64/0.8.2-SNAPSHOT.0-compose-locked/core-iossimulatorarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iossimulatorarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosx64/0.8.2-SNAPSHOT.0-compose-locked/core-iosx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iosx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-iosx64/0.8.2-SNAPSHOT.0-compose-locked/core-iosx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-iosx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-jvm/0.8.2-SNAPSHOT.0-compose-locked/core-jvm-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-jvm",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../core-jvm/0.8.2-SNAPSHOT.0-compose-locked/core-jvm-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-jvm",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../core-linuxx64/0.8.2-SNAPSHOT.0-compose-locked/core-linuxx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "core-linuxx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    }
+  ]
+}

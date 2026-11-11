@@ -1,0 +1,251 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../webblocks/0.8.2-SNAPSHOT.0-compose-locked/webblocks-0.8.2-SNAPSHOT.0-compose-locked.module",
+    "group": "br.com.wave",
+    "module": "webblocks",
+    "version": "0.8.2-SNAPSHOT.0-compose-locked",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks.aar",
+          "url": "webblocks-android-0.8.2-SNAPSHOT.0-compose-locked.aar",
+          "size": 48117,
+          "sha512": "a340ac402f8814e8926c174a6cf3b482ff5192d1fd9aea1d154db6b42b683f0b7ff9256daebb8974b6564373403549a6da1c0efde29d576879cec6627fc43eb8",
+          "sha256": "5d13de1e83bd3b38e2bb6607e8035b402f75f9600262c800fc2b71beebfb6933",
+          "sha1": "383dcc767dac8a3e53c3b3d77d5dea3c74005190",
+          "md5": "308c7f8d58463ee77ebb0e2042cb41a2"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.github.kevinnzou",
+          "module": "compose-webview-multiplatform",
+          "version": {
+            "requires": "2.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.2-SNAPSHOT.0-compose-locked",
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "webblocks.aar",
+          "url": "webblocks-android-0.8.2-SNAPSHOT.0-compose-locked.aar",
+          "size": 48117,
+          "sha512": "a340ac402f8814e8926c174a6cf3b482ff5192d1fd9aea1d154db6b42b683f0b7ff9256daebb8974b6564373403549a6da1c0efde29d576879cec6627fc43eb8",
+          "sha256": "5d13de1e83bd3b38e2bb6607e8035b402f75f9600262c800fc2b71beebfb6933",
+          "sha1": "383dcc767dac8a3e53c3b3d77d5dea3c74005190",
+          "md5": "308c7f8d58463ee77ebb0e2042cb41a2"
+        }
+      ]
+    }
+  ]
+}
