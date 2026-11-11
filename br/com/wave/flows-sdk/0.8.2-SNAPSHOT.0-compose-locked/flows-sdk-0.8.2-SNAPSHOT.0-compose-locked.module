@@ -1,0 +1,355 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "flows-sdk",
+    "version": "0.8.2-SNAPSHOT.0-compose-locked",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "requires": "0.8.2-SNAPSHOT.0-compose-locked"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-compose",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-svg",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.coil-kt.coil3",
+          "module": "coil-network-ktor3",
+          "version": {
+            "requires": "3.4.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flows-sdk-metadata-0.8.2-SNAPSHOT.0-compose-locked.jar",
+          "url": "flows-sdk-0.8.2-SNAPSHOT.0-compose-locked.jar",
+          "size": 42089,
+          "sha512": "107be33263de66e84fa0882f7dab2b84c3a895f5371ee4adee51289c567b97883cdec936bf1cf15de18468235be7b94cbeec7ad555f17e4c4c292752aa4b731d",
+          "sha256": "7402408f202ee3a02ef221fced015e3973629e16f64c9e6d911c029237c6bb88",
+          "sha1": "2ef8cb4d90a3be542068378969b52d7b43a3b4f0",
+          "md5": "b83e0be460ea98e414e1b90c983cad6e"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-android/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-android-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-android",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-android/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-android-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-android",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iossimulatorarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iossimulatorarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iossimulatorarm64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iossimulatorarm64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iossimulatorarm64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flows-sdk-iosx64/0.8.2-SNAPSHOT.0-compose-locked/flows-sdk-iosx64-0.8.2-SNAPSHOT.0-compose-locked.module",
+        "group": "br.com.wave",
+        "module": "flows-sdk-iosx64",
+        "version": "0.8.2-SNAPSHOT.0-compose-locked"
+      }
+    }
+  ]
+}
