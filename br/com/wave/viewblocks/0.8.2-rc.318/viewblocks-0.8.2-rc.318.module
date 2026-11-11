@@ -1,0 +1,227 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "viewblocks",
+    "version": "0.8.2-rc.318",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewblocks-0.8.2-rc.318.aar",
+          "url": "viewblocks-0.8.2-rc.318.aar",
+          "size": 158408,
+          "sha512": "3cf75a14969792d0855b7da8920a747cae9354057479c398b677c6be4de8e094f2b14fc301d0730c9fd839a38fbe98a5a76851257a20a28167c67f4db8bcf5bb",
+          "sha256": "4425501c8265d9a35ae071886173acd0263e05efafea4863801289200154ef3e",
+          "sha1": "d46a4ae6677c50b87efcec09fc0b6f99592f767c",
+          "md5": "b1ff7031ee0767769c0abf0144960ddf"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.8.2-rc.318",
+            "requires": "0.8.2-rc.318"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "viewblocks-0.8.2-rc.318.aar",
+          "url": "viewblocks-0.8.2-rc.318.aar",
+          "size": 158408,
+          "sha512": "3cf75a14969792d0855b7da8920a747cae9354057479c398b677c6be4de8e094f2b14fc301d0730c9fd839a38fbe98a5a76851257a20a28167c67f4db8bcf5bb",
+          "sha256": "4425501c8265d9a35ae071886173acd0263e05efafea4863801289200154ef3e",
+          "sha1": "d46a4ae6677c50b87efcec09fc0b6f99592f767c",
+          "md5": "b1ff7031ee0767769c0abf0144960ddf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "flow-wrapper-kmp",
+    "version": "0.8.2-rc.318",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "core",
+          "version": {
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "requires": "0.8.2-rc.318"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.10.0-alpha05"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.components",
+          "module": "components-resources",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material",
+          "module": "material-icons-extended",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flow-wrapper-kmp-metadata-0.8.2-rc.318.jar",
+          "url": "flow-wrapper-kmp-0.8.2-rc.318.jar",
+          "size": 28730,
+          "sha512": "e87a688df3f24c8cd44696783d8c5d33db9c010cebbb8f3238285c3ea3de900a081a8cd93580ba291207a67f9deb2fedbf53f2144278748891882aae0cc108aa",
+          "sha256": "44a154c501557903711291de0a9722c6755324539c73c349fafbfe52dc38021d",
+          "sha1": "edc6225b63c34c6bbc8ec0b5bc63f0830c9b462c",
+          "md5": "7da3f24b6d7255ec22d6cbd2b8607568"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.8.2-rc.318/flow-wrapper-kmp-android-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-android/0.8.2-rc.318/flow-wrapper-kmp-android-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-android",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.8.2-rc.318/flow-wrapper-kmp-iosarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.8.2-rc.318/flow-wrapper-kmp-iosarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosarm64/0.8.2-rc.318/flow-wrapper-kmp-iosarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.8.2-rc.318/flow-wrapper-kmp-iossimulatorarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.8.2-rc.318/flow-wrapper-kmp-iossimulatorarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iossimulatorarm64/0.8.2-rc.318/flow-wrapper-kmp-iossimulatorarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iossimulatorarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.8.2-rc.318/flow-wrapper-kmp-iosx64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosX64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.8.2-rc.318/flow-wrapper-kmp-iosx64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../flow-wrapper-kmp-iosx64/0.8.2-rc.318/flow-wrapper-kmp-iosx64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "flow-wrapper-kmp-iosx64",
+        "version": "0.8.2-rc.318"
+      }
+    }
+  ]
+}

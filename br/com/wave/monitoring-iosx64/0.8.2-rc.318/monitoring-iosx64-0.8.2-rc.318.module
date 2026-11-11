@@ -1,0 +1,149 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../monitoring/0.8.2-rc.318/monitoring-0.8.2-rc.318.module",
+    "group": "br.com.wave",
+    "module": "monitoring",
+    "version": "0.8.2-rc.318",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "monitoring-iosX64Main-0.8.2-rc.318.klib",
+          "url": "monitoring-iosx64-0.8.2-rc.318.klib",
+          "size": 373845,
+          "sha512": "887c4489dfd8696780819b360f0d31be1e5147e25209c51b3b30053e72cc8241afcc5e59cdc521492763f53d1d2ceed51650c1283cae93f44ce040cbc47cb63d",
+          "sha256": "ead66dec306b94adee58aa36528ae914e8c1d6e4bdf81424f3acc19008a3c119",
+          "sha1": "db6b1875fe5b33551aeb20de7ce4d75ff8ebb33c",
+          "md5": "9643c3e57cffd394d1c2bc1a78eebdfe"
+        }
+      ]
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "monitoring-iosx64-0.8.2-rc.318-metadata.jar",
+          "url": "monitoring-iosx64-0.8.2-rc.318-metadata.jar",
+          "size": 10217,
+          "sha512": "33e3e98c963fcb3f426d27881f04f40292ae9654387a3acdd30101f6d732b7a33c1f5563c09ea0dfae25687023054cac37ee508426a9df64305cc464052c1c1a",
+          "sha256": "6dd6792e55b6d33e51d00b18145f3d5e8aa907681e9e94abbd69e134a29c4156",
+          "sha1": "df31b3c0fd4db224580be3bfc3ec58af82bc6141",
+          "md5": "14a9513562cf72b1c0b6f489e3e5be4c"
+        }
+      ]
+    }
+  ]
+}

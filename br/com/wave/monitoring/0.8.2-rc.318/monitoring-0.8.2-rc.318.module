@@ -1,0 +1,242 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "br.com.wave",
+    "module": "monitoring",
+    "version": "0.8.2-rc.318",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.1.0"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.9.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-darwin",
+          "version": {
+            "requires": "3.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "monitoring-metadata-0.8.2-rc.318.jar",
+          "url": "monitoring-0.8.2-rc.318.jar",
+          "size": 42509,
+          "sha512": "580854bb09eb0fd6519a80946a57f147f1451da3e052f776bb09e9c9766c2bb35fd4ad0db19911e2c683ecebf30481c6aa9ddbce2d4d0ba03ce34794e19b5891",
+          "sha256": "c40273ca1c5d4e3b18db8db345b113c89e6f5b8fbfe1e4ee2fb1f160f45a37bd",
+          "sha1": "90b9c2340ebc59220ed6e4059e70d88a510053dc",
+          "md5": "65f83edc2cb809a8825dcd161cad9e29"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../monitoring-android/0.8.2-rc.318/monitoring-android-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-android",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../monitoring-android/0.8.2-rc.318/monitoring-android-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-android",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iosarm64/0.8.2-rc.318/monitoring-iosarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iosarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iosarm64/0.8.2-rc.318/monitoring-iosarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iosarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iossimulatorarm64/0.8.2-rc.318/monitoring-iossimulatorarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iossimulatorarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iossimulatorarm64/0.8.2-rc.318/monitoring-iossimulatorarm64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iossimulatorarm64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iosx64/0.8.2-rc.318/monitoring-iosx64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iosx64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../monitoring-iosx64/0.8.2-rc.318/monitoring-iosx64-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-iosx64",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../monitoring-jvm/0.8.2-rc.318/monitoring-jvm-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-jvm",
+        "version": "0.8.2-rc.318"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../monitoring-jvm/0.8.2-rc.318/monitoring-jvm-0.8.2-rc.318.module",
+        "group": "br.com.wave",
+        "module": "monitoring-jvm",
+        "version": "0.8.2-rc.318"
+      }
+    }
+  ]
+}
