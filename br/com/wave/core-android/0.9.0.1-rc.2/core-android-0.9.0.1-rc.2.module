@@ -1,0 +1,202 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../core/0.9.0.1-rc.2/core-0.9.0.1-rc.2.module",
+    "group": "br.com.wave",
+    "module": "core",
+    "version": "0.9.0.1-rc.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core.aar",
+          "url": "core-android-0.9.0.1-rc.2.aar",
+          "size": 156751,
+          "sha512": "3f80979cb0fbbd3fc3680b1586368e6062d04e9fdec27f3fd16df6bb8582400a1d96b48156687e71e9f7385c4ae52f5a77783d1fae9ce5dc999d75a0e9bedf0e",
+          "sha256": "184c5c70457df281a09390c1ae47b4600a8efc9f1188a2ffce0a41ab38efaa52",
+          "sha1": "8673024c79f59eadc0c5074f4541b8dd6543b18e",
+          "md5": "111cd183c52bd5809c43332a074ad233"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "br.com.wave",
+          "module": "runtime",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "monitoring",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "composeblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "viewblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "webblocks",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flows-sdk",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        },
+        {
+          "group": "br.com.wave",
+          "module": "flow-wrapper-kmp",
+          "version": {
+            "strictly": "0.9.0.1-rc.2",
+            "requires": "0.9.0.1-rc.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core.aar",
+          "url": "core-android-0.9.0.1-rc.2.aar",
+          "size": 156751,
+          "sha512": "3f80979cb0fbbd3fc3680b1586368e6062d04e9fdec27f3fd16df6bb8582400a1d96b48156687e71e9f7385c4ae52f5a77783d1fae9ce5dc999d75a0e9bedf0e",
+          "sha256": "184c5c70457df281a09390c1ae47b4600a8efc9f1188a2ffce0a41ab38efaa52",
+          "sha1": "8673024c79f59eadc0c5074f4541b8dd6543b18e",
+          "md5": "111cd183c52bd5809c43332a074ad233"
+        }
+      ]
+    }
+  ]
+}
